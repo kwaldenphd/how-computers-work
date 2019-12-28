@@ -57,7 +57,7 @@ After working through the user manual, attempt the following tasks:
 12. add an `OR-Gate` and `NOT-gate` 
 13. test inputs for these new gates
 
-<blockquote>Q1: Describe your experience attempting each of tasks, relying on the documentation provided in the user manual. What went well? What was challenging? What lingering questions do you have about how circuits work?</blockquote>
+<blockquote>Q1: Describe your experience attempting each of tasks, relying on the documentation provided in the user manual. What went well? What was challenging? What lingering questions do you have about how circuits work? Include an image of your circuit.</blockquote>
 
 # Data path and memory
 
@@ -121,7 +121,7 @@ Run a simulation of a full cycle to subtract `R1` from `R2` and store the result
 
 <blockquote>Q7: Describe what happened and the output in the previous step.</blockquote>
 
-<blockquote>Q8: What settings (e.g., knob positions) would cause the value stored in <code>R3</code> to be doubled?<blockquote>
+<blockquote>Q8: What settings (e.g., knob positions) would cause the value stored in <code>R3</code> to be doubled?</blockquote>
 
 <blockquote>Q9: Set <code>R3</code> to 12 and test your answer to Q8? Did your hypothesis hold true? Why or why not?</blockquote>
 
@@ -210,7 +210,7 @@ Reset the PC to value zero and executie the program to test your prediction.
 
 # Lab Notebook Questions
   
-Q1: Describe your experience attempting each of tasks, relying on the documentation provided in the user manual. What went well? What was challenging? What lingering questions do you have about how circuits work?
+Q1: Describe your experience attempting each of tasks, relying on the documentation provided in the user manual. What went well? What was challenging? What lingering questions do you have about how circuits work? Include an image of your circuit.
 
 Q2: Based on the settings of the bus addresses, what values do you expect to show along the A and B bus?
 
