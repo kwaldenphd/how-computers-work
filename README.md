@@ -31,6 +31,22 @@ This section of the lab is based on the "Machine language" lab:
 - Revised: Jerod Weinman, 4 April 2014
 - Adapted from Dave Reed, “A Balanced Introduction to Computer Science,” Exercises 14.9, 14.10, and 14.13. 
 
+# Table of Contents
+
+- [Logic gates and digital circuits](#logic-gates-and-digital-circuits)
+  * [Installing SmartSim](#installing-smartsim)
+  * [Getting Started With SmartSim](#getting-started-with-smartsim)
+- [Data path and memory](#data-path-and-memory)
+  * [CPU Data Path](#cpu-data-path)
+  * [ALU Operation](#alu-operation)
+  * [CPY and memory](#cpu-and-memory)
+- [Machine Language](#machine-language)
+  * [Assembly to Machine Language](#assembly-to-machine-language)
+  * [Machine to Assembly Language](#machine-to-assembly-language)
+    * [Executing a Program](#executing-a-program)
+    * [The `HALT` Instruction](#the-halt-instruction)
+- [Lab Notebook Questions](#lab-notebook-questions)
+
 # Logic gates and digital circuits
 
 ## Installing SmartSim 
