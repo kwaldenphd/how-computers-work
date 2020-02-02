@@ -62,19 +62,19 @@ This section of the lab is based on the "Machine language" lab:
 4. Work through the [SmartSim User Manual](https://smartsim.org.uk/downloads/manual/smartsim_user_manual.pdf) to become familiar with the program interface and explore various functions.
 
 5. After working through the user manual, attempt the following tasks:
-  a. add an input switch
-  b. add wires to your circuit
-  c. move or reposition circuit elements
-  d. delete wires from your circuit
-  e. add an output pin (LED) 
-  f. connect your input switch to the LED
-  g. use the input switch to turn the LED on and off
-  h. add an `AND-Gate` to your circuit
-  i. connect two input switches to the `AND-Gate`'s input points
-  j. connect an LED to the `AND-GATE`'s output point.
-  k. test all possible input combinations
-  l. add an `OR-Gate` and `NOT-gate` 
-  m. test inputs for these new gates
+  * add an input switch
+  * add wires to your circuit
+  * move or reposition circuit elements
+  * delete wires from your circuit
+  * add an output pin (LED) 
+  * connect your input switch to the LED
+  * use the input switch to turn the LED on and off
+  * add an `AND-Gate` to your circuit
+  * connect two input switches to the `AND-Gate`'s input points
+  * connect an LED to the `AND-GATE`'s output point.
+  * test all possible input combinations
+  * add an `OR-Gate` and `NOT-gate` 
+  * test inputs for these new gates
 
 <blockquote>Q1: Describe your experience attempting each of tasks, relying on the documentation provided in the user manual. What went well? What was challenging? What lingering questions do you have about how circuits work? Include an image of your circuit.</blockquote>
 
