@@ -216,7 +216,7 @@ This section of the lab is based on the "Machine language" lab:
 
 51. Click `Reset` above the `PC` (Program Counter) to initialize it to zero.
 
-<blockquote>Q16: What do you expect to be the result when you click <Execute>? run the simulation and verify your prediction.</blockquote>
+<blockquote>Q16: What do you expect to be the result when you click Execute? Run the simulation and verify your prediction.</blockquote>
   
 ### The `HALT` Instruction
 
@@ -259,6 +259,6 @@ Q14: What is the assembly instruction for the following machine code? `100000100
 
 Q15: Were you correct? If not, verify where your mistake was.
 
-Q16: What do you expect to be the result when you click <Execute>? run the simulation and verify your prediction.
+Q16: What do you expect to be the result when you click Execute? Run the simulation and verify your prediction.
 
 Q17: What would happen if you had forgotten the `HALT` instruction? How would the control unit react?
