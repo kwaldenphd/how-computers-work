@@ -39,7 +39,7 @@ This section of the lab is based on the "Machine language" lab:
 - [Data path and memory](#data-path-and-memory)
   * [CPU Data Path](#cpu-data-path)
   * [ALU Operation](#alu-operation)
-  * [CPY and memory](#cpu-and-memory)
+  * [CPU and memory](#cpu-and-memory)
 - [Machine Language](#machine-language)
   * [Assembly to Machine Language](#assembly-to-machine-language)
   * [Machine to Assembly Language](#machine-to-assembly-language)
