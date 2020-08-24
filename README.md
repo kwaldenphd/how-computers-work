@@ -33,9 +33,6 @@ This section of the lab is based on the "Machine language" lab:
 
 # Table of Contents
 
-- [Logic gates and digital circuits](#logic-gates-and-digital-circuits)
-  * [Installing SmartSim](#installing-smartsim)
-  * [Getting Started With SmartSim](#getting-started-with-smartsim)
 - [Data path and memory](#data-path-and-memory)
   * [CPU Data Path](#cpu-data-path)
   * [ALU Operation](#alu-operation)
@@ -45,23 +42,177 @@ This section of the lab is based on the "Machine language" lab:
   * [Machine to Assembly Language](#machine-to-assembly-language)
     * [Executing a Program](#executing-a-program)
     * [The `HALT` Instruction](#the-halt-instruction)
+- [Logic gates and digital circuits](#logic-gates-and-digital-circuits)
+  * [Installing SmartSim](#installing-smartsim)
+  * [Getting Started With SmartSim](#getting-started-with-smartsim)
 - [Lab Notebook Questions](#lab-notebook-questions)
 
-# Logic gates and digital circuits
+# Data path and memory
 
-## Installing SmartSim 
+## CPU Data Path
 
-1. The software we will use for this lab is [called SmartSim](https://smartsim.org.uk/index.php?page=downloads), "a free and open source digital logic circuit design and simulation package.” SmartSim is released under a GNU General Public License Version 3.
+1. Open the [Knob & Switch Datapath 1 Simulator](http://www.dave-reed.com/book/Chapter14/datapath/datapath.html) in a new browser window. 
 
-2. Open a Terminal window and use `sudo apt-get update` and `sudo apt-get install smartsim` to install SmartSimP on your Pi.
+2. This simple CPU contains four registers, but no control unit. You will be the control unit that directs which registers are operated on and which operations are done.
 
-3. Open SmartSim.
+3. Take a look at the top box that says `Register Bank.` At the right are two command knobs, `A Bus Address` and `B Bus Address.` These knobs specify which registers should be read as inputs to the ALU. 
 
-## Getting Started With SmartSim
+<blockquote>CPU stands for central processing unit. ALU stands for arithmetic logic unit.</blockquote>
 
-4. Work through the [SmartSim User Manual](https://smartsim.org.uk/downloads/manual/smartsim_user_manual.pdf) to become familiar with the program interface and explore various functions.
+4. Click on each knob to turn it.
 
-5. After working through the user manual, attempt the following tasks:
+5. Set the `A bus` address to `R2` and the `B bus` address to `R1`. 
+
+6. When a cycle is executed, the CPU will send the values from `R2` and `R1` along the bus.
+
+7. The register values are the textboxes with a green background. Currently, all the register default values are zero. 
+
+8. Set the value of `R1` to 42. Set the value of `R2` to 31.
+
+9. Check that `Animation Speed` is set on `Medium` and `Number Base` is set to `+-10.`
+
+<blockquote>Q1: Based on the settings of the bus addresses, what values do you expect to show along the A and B bus?</blockquote>
+
+<blockquote>Q2: What happens when you click <Execute>? Are the <code>A bus</code> and <code>B bus</code> values what you expected? Why or why not?</blockquote>
+  
+## ALU Operation
+
+10. The previous set of steps sent data to the ALU. Next we will tell the ALU what to do with the data. 
+
+11. In the bottom right of the simulator is yet another knob entitled `ALU Operation.` This knob instructs the ALU what operation to perform on the data it has received. 
+
+12. Click the knob so that it points to the instruction `A-B.`
+
+13. The box to the left of the ALU knob is a diagnostic. It reports information based on the input provided to the ALU.
+
+14. Right now, `zero` has a check next to it because the default result is zero. You should see this reflected in the `C` textbox.
+
+<blockquote>Q3: What do you think will happen to the boxes when the result is less than zero?</blockquote>
+
+15. Check that the simulator's current settings to make sure it is set to run `A-B`, where `A` is `R2` and `B` is `R1`.
+
+<blockquote>Q4: With the values of <code>R1=42</code> and <code>R2=31</code> that you input earlier, what do you expect the result <code>C</code> to be?</blockquote>
+
+16. Run the simulator to start a cycle with these settings. Halt the simulator when the result flashes in `C.` 
+
+<blockquote>Q5: Is the result what you expected? Why or why not? What happened to the diagnostic boxes?</blockquote>
+
+17. Now we want the ALU to do something with the calculated result.
+
+18. The calculated result gets sent along the `C bus` back into the `register bank`.
+
+19. The `C Bus Address` knob in the top-left of the simulator tells the CPU which register it should use to store the calculated result. 
+
+20. Click the knob to store the result in `R3`.
+
+21. Run a simulation of a full cycle to subtract `R1` from `R2` and store the result in `R3`.
+
+<blockquote>Q6: Describe what happened and the output in the previous step.</blockquote>
+
+<blockquote>Q7: What settings (e.g., knob positions) would cause the value stored in <code>R3</code> to be doubled?</blockquote>
+
+<blockquote>Q8: Set <code>R3</code> to 12 and test your answer to Q8? Did your hypothesis hold true? Why or why not?</blockquote>
+
+## CPU and memory
+
+22. So far, we have only been using data from a limited number of CPU registers. Actual computers have much more storage in their main memory. Data gets from memory into the registers through additional communication channels.
+
+23. Open the [Knob & Switch Datapath and Memory Simulator](http://www.dave-reed.com/book/Chapter14/dpandmem.html) in a new browser window. 
+
+24. Two notable components here are the memory and bus switches. The memory values on the left of the simulator represent `RAM`. The button next to each memory location indicates which location will be read (`R`) from or written to (`W`) in one cycle of the machine.
+
+25. The bus connections from the ALU to the register bank now have switches on them. 
+
+26. Click these connections to toggle (open and close) the switches. Note that an open switch looks like an open door. No signal will flow across an open switch. A closed switch allows the signal to flow across it. 
+
+27. Open the circuit from the ALU into the `C bus`, so that there is no longer a connection.
+
+28. We also have two new connections along the `C bus`. The `C bus` is the pathway into the register bank. 
+
+29. The connection pointing up from the `Main Memory Bus` into `C bus` allows us put memory values into registers, rather than ALU results. 
+
+30. Click to close the connection from the `Main Memory bus` to the `C bus`. The connection from the `C bus` to the memory bus should be open.
+
+31. Put the value 42 into memory location 0, and select it as the `RW` location.
+
+32. Set the connection switch along the `C Bus` into the register bank so that it is closed. Select the `C Bus address` to be `R0`.
+
+<blockquote>Q10: Based on these settings, what do you think will happen when you click <Execute>?</blockquote>
+  
+33. Verify your prediction using the simulator.
+
+<blockquote>Q10: What settings (bus addresses, ALU operation, switches, and memory RW) would result in <code>R0-R3</code> being stored in memory location 4?</blockquote>
+
+34. Set `R0=23` and `R3=16` and verify your prediction using the simulator.
+
+# Machine Language
+
+35. Open the [Knob & Switch Machine Language Instruction Set](http://www.dave-reed.com/book/Chapter14/instructions.html) in a new browser window. 
+
+36. Open the [Knob & Switch Machine Simulator](http://www.dave-reed.com/book/Chapter14/machine.html) in a second new browser window. 
+
+37. Keep both Knob & Switch windows open in this section of the lab.
+
+## Assembly to Machine Language
+
+38. In memory location `0`, type the instruction `ADD R2 R1 R0`.
+
+<blockquote>Q11: What is the binary machine language representation of this instruction?</blockquote>
+
+39. Use the `View As:` drop-down menu on the left-hand side of the window to check your result. Change the menu value to `2` to reveal the binary executable instruction. 
+
+<blockquote>Q12: Were you correct? If not, verify where your mistake was.</blockquote>
+
+## Machine to Assembly Language
+
+40. Refresh the window to reset the simulator to default settings.
+
+41. On the drop-down menu next to memory location `1`, change the value from `Auto` to `2`.
+
+<blockquote>Q13: What is the assembly instruction for the following machine code? <code>1000001001001010</code></blockquote>
+
+42. Copy this bit string into memory location `1`.
+
+43. On the drop-down menu next to memory location `1`, change the value from `2` to `Instr` to show the binary executable instruction. 
+
+<blockquote>Q14: Were you correct? If not, verify where your mistake was.</blockquote>
+
+44. Enter the `HALT` instruction in memory location `2`.
+
+### Executing a Program
+
+45. Change the contents of `R0`, `R1`, `R2`, and `R3` to 1, 3, 5, and 7, respectively.
+
+46. Click `Reset` above the `PC` (Program Counter) to initialize it to zero.
+
+<blockquote>Q15: What do you expect to be the result when you click Execute? Run the simulation and verify your prediction.</blockquote>
+  
+### The `HALT` Instruction
+
+<blockquote>Q16: What would happen if you had forgotten the <code>HALT</code> instruction? How would the control unit react?</blockquote>
+
+47. Test your prediction by changing `HALT` in memory address `2` to something other than the default value.
+  * You may need to change the `View as` drop-down to something other than `Instr`.
+
+48. Reset the PC to value zero and execute the program to test your prediction.
+
+# OPTIONAL: If interested in diving more into circuits
+
+## Logic gates and digital circuits
+
+### Installing SmartSim 
+
+A. There are a few free software options that simulate building circuits. One option for PC and Linux users is [called SmartSim](https://smartsim.org.uk/index.php?page=downloads), "a free and open source digital logic circuit design and simulation package.” SmartSim is released under a GNU General Public License Version 3.
+
+B. Open a Terminal window and use `sudo apt-get update` and `sudo apt-get install smartsim` to install SmartSimP.
+
+C. Open SmartSim.
+
+### Getting Started With SmartSim
+
+D. Work through the [SmartSim User Manual](https://smartsim.org.uk/downloads/manual/smartsim_user_manual.pdf) (or documentation for another circuit program) to become familiar with the program interface and explore various functions. [CircuitLab](https://www.circuitlab.com/docs/the-basics/) is another option that runs in a web browser and will work across operating systems. See also: CNET's ["Circuit Simulator on Mac" article](https://www.cnet.com/forums/discussions/circuit-simulator-on-mac/) (25 August 2016). 
+
+E. After working through the documentation, attempt the following tasks:
   * add an input switch
   * add wires to your circuit
   * move or reposition circuit elements
@@ -76,189 +227,39 @@ This section of the lab is based on the "Machine language" lab:
   * add an `OR-Gate` and `NOT-gate` 
   * test inputs for these new gates
 
-<blockquote>Q1: Describe your experience attempting each of tasks, relying on the documentation provided in the user manual. What went well? What was challenging? What lingering questions do you have about how circuits work? Include an image of your circuit.</blockquote>
+<blockquote>Describe your experience attempting each of tasks, relying on the documentation provided in the user manual. What went well? What was challenging? What lingering questions do you have about how circuits work? Include an image of your circuit.</blockquote>
 
-# Data path and memory
-
-## CPU Data Path
-
-6. Open the [Knob & Switch Datapath 1 Simulator](http://www.dave-reed.com/book/Chapter14/datapath/datapath.html) in a new browser window. 
-
-7. This simple CPU contains four registers, but no control unit. You will be the control unit that directs which registers are operated on and which operations are done.
-
-8. Take a look at the top box that says `Register Bank.` At the right are two command knobs, `A Bus Address` and `B Bus Address.` These knobs specify which registers should be read as inputs to the ALU. 
-
-<blockquote>CPU stands for central processing unit. ALU stands for arithmetic logic unit.</blockquote>
-
-9. Click on each knob to turn it.
-
-10. Set the `A bus` address to `R2` and the `B bus` address to `R1`. 
-
-11. When a cycle is executed, the CPU will send the values from `R2` and `R1` along the bus.
-
-12. The register values are the textboxes with a green background. Currently, all the register default values are zero. 
-
-13. Set the value of `R1` to 42. Set the value of `R2` to 31.
-
-14. Check that `Animation Speed` is set on `Medium` and `Number Base` is set to `+-10.`
-
-<blockquote>Q2: Based on the settings of the bus addresses, what values do you expect to show along the A and B bus?</blockquote>
-
-<blockquote>Q3: What happens when you click <Execute>? Are the <code>A bus</code> and <code>B bus</code> values what you expected? Why or why not?</blockquote>
-  
-## ALU Operation
-
-15. The previous set of steps sent data to the ALU. Next we will tell the ALU what to do with the data. 
-
-16. In the bottom right of the simulator is yet another knob entitled `ALU Operation.` This knob instructs the ALU what operation to perform on the data it has received. 
-
-17. Click the knob so that it points to the instruction `A-B.`
-
-18. The box to the left of the ALU knob is a diagnostic. It reports information based on the input provided to the ALU.
-
-19. Right now, `zero` has a check next to it because the default result is zero. You should see this reflected in the `C` textbox.
-
-<blockquote>Q4: What do you think will happen to the boxes when the result is less than zero?</blockquote>
-
-20. Check that the simulator's current settings to make sure it is set to run `A-B`, where `A` is `R2` and `B` is `R1`.
-
-<blockquote>Q5: With the values of <code>R1=42</code> and <code>R2=31</code> that you input earlier, what do you expect the result <code>C</code> to be?</blockquote>
-
-21. Run the simulator to start a cycle with these settings. Halt the simulator when the result flashes in `C.` 
-
-<blockquote>Q6: Is the result what you expected? Why or why not? What happened to the diagnostic boxes?</blockquote>
-
-22. Now we want the ALU to do something with the calculated result.
-
-23. The calculated result gets sent along the `C bus` back into the `register bank`.
-
-24. The `C Bus Address` knob in the top-left of the simulator tells the CPU which register it should use to store the calculated result. 
-
-25. Click the knob to store the result in `R3`.
-
-26. Run a simulation of a full cycle to subtract `R1` from `R2` and store the result in `R3`.
-
-<blockquote>Q7: Describe what happened and the output in the previous step.</blockquote>
-
-<blockquote>Q8: What settings (e.g., knob positions) would cause the value stored in <code>R3</code> to be doubled?</blockquote>
-
-<blockquote>Q9: Set <code>R3</code> to 12 and test your answer to Q8? Did your hypothesis hold true? Why or why not?</blockquote>
-
-## CPU and memory
-
-27. So far, we have only been using data from a limited number of CPU registers. Actual computers have much more storage in their main memory. Data gets from memory into the registers through additional communication channels.
-
-28. Open the [Knob & Switch Datapath and Memory Simulator](http://www.dave-reed.com/book/Chapter14/dpandmem.html) in a new browser window. 
-
-29. Two notable components here are the memory and bus switches. The memory values on the left of the simulator represent `RAM`. The button next to each memory location indicates which location will be read (`R`) from or written to (`W`) in one cycle of the machine.
-
-30. The bus connections from the ALU to the register bank now have switches on them. 
-
-31. Click these connections to toggle (open and close) the switches. Note that an open switch looks like an open door. No signal will flow across an open switch. A closed switch allows the signal to flow across it. 
-
-32. Open the circuit from the ALU into the `C bus`, so that there is no longer a connection.
-
-33. We also have two new connections along the `C bus`. The `C bus` is the pathway into the register bank. 
-
-34. The connection pointing up from the `Main Memory Bus` into `C bus` allows us put memory values into registers, rather than ALU results. 
-
-35. Click to close the connection from the `Main Memory bus` to the `C bus`. The connection from the `C bus` to the memory bus should be open.
-
-36. Put the value 42 into memory location 0, and select it as the `RW` location.
-
-37. Set the connection switch along the `C Bus` into the register bank so that it is closed. Select the `C Bus address` to be `R0`.
-
-<blockquote>Q10: Based on these settings, what do you think will happen when you click <Execute>?</blockquote>
-  
-38. Verify your prediction using the simulator.
-
-<blockquote>Q11: What settings (bus addresses, ALU operation, switches, and memory RW) would result in <code>R0-R3</code> being stored in memory location 4?</blockquote>
-
-39. Set `R0=23` and `R3=16` and verify your prediction using the simulator.
-
-# Machine Language
-
-40. Open the [Knob & Switch Machine Language Instruction Set](http://www.dave-reed.com/book/Chapter14/instructions.html) in a new browser window. 
-
-41. Open the [Knob & Switch Machine Simulator](http://www.dave-reed.com/book/Chapter14/machine.html) in a second new browser window. 
-
-42. Keep both Knob & Switch windows open in this section of the lab.
-
-## Assembly to Machine Language
-
-43. In memory location `0`, type the instruction `ADD R2 R1 R0`.
-
-<blockquote>Q12: What is the binary machine language representation of this instruction?</blockquote>
-
-44. Use the `View As:` drop-down menu on the left-hand side of the window to check your result. Change the menu value to `2` to reveal the binary executable instruction. 
-
-<blockquote>Q13: Were you correct? If not, verify where your mistake was.</blockquote>
-
-## Machine to Assembly Language
-
-45. Refresh the window to reset the simulator to default settings.
-
-46. On the drop-down menu next to memory location `1`, change the value from `Auto` to `2`.
-
-<blockquote>Q14: What is the assembly instruction for the following machine code? <code>1000001001001010</code></blockquote>
-
-47. Copy this bit string into memory location `1`.
-
-48. On the drop-down menu next to memory location `1`, change the value from `2` to `Instr` to show the binary executable instruction. 
-
-<blockquote>Q15: Were you correct? If not, verify where your mistake was.</blockquote>
-
-49. Enter the `HALT` instruction in memory location `2`.
-
-### Executing a Program
-
-50. Change the contents of `R0`, `R1`, `R2`, and `R3` to 1, 3, 5, and 7, respectively.
-
-51. Click `Reset` above the `PC` (Program Counter) to initialize it to zero.
-
-<blockquote>Q16: What do you expect to be the result when you click Execute? Run the simulation and verify your prediction.</blockquote>
-  
-### The `HALT` Instruction
-
-<blockquote>Q17: What would happen if you had forgotten the <code>HALT</code> instruction? How would the control unit react?</blockquote>
-
-52. Test your prediction by changing `HALT` in memory address `2` to something other than the default value.
-  * You may need to change the `View as` drop-down to something other than `Instr`.
-
-53. Reset the PC to value zero and executie the program to test your prediction.
 
 # Lab Notebook Questions
   
-Q1: Describe your experience attempting each of tasks, relying on the documentation provided in the user manual. What went well? What was challenging? What lingering questions do you have about how circuits work? Include an image of your circuit.
+Q1: Based on the settings of the bus addresses, what values do you expect to show along the A and B bus?
 
-Q2: Based on the settings of the bus addresses, what values do you expect to show along the A and B bus?
+Q2: What happens when you click <Execute>? Are the `A bus` and `B bus` values what you expected? Why or why not?
 
-Q3: What happens when you click <Execute>? Are the `A bus` and `B bus` values what you expected? Why or why not?
+Q3: What do you think will happen to the boxes when the result is less than zero?
 
-Q4: What do you think will happen to the boxes when the result is less than zero?
+Q4: With the values of `R1=42` and `R2=31` that you input earlier, what do you expect the result `C` to be?
 
-Q5: With the values of `R1=42` and `R2=31` that you input earlier, what do you expect the result `C` to be?
+Q5: Is the result what you expected? Why or why not? What happened to the diagnostic boxes?
 
-Q6: Is the result what you expected? Why or why not? What happened to the diagnostic boxes?
+Q6: Describe what happened and the output in the previous step.
 
-Q7: Describe what happened and the output in the previous step.
+Q7: What settings (e.g., knob positions) would cause the value stored in `R3` to be doubled?
 
-Q8: What settings (e.g., knob positions) would cause the value stored in `R3` to be doubled?
+Q8: Set `R3` to 12 and test your answer to Q8? Did your hypothesis hold true? Why or why not?
 
-Q9: Set `R3` to 12 and test your answer to Q8? Did your hypothesis hold true? Why or why not?
+Q9: Based on these settings, what do you think will happen when you click <Execute>?
 
-Q10: Based on these settings, what do you think will happen when you click <Execute>?
+Q10: What settings (bus addresses, ALU operation, switches, and memory RW) would result in `R0-R3` being stored in memory location 4?
 
-Q11: What settings (bus addresses, ALU operation, switches, and memory RW) would result in `R0-R3` being stored in memory location 4?
+Q11: What is the binary machine language representation of this instruction?
 
-Q12: What is the binary machine language representation of this instruction?
+Q12: Were you correct? If not, verify where your mistake was.
 
-Q13: Were you correct? If not, verify where your mistake was.
+Q13: What is the assembly instruction for the following machine code? `1000001001001010`
 
-Q14: What is the assembly instruction for the following machine code? `1000001001001010`
+Q14: Were you correct? If not, verify where your mistake was.
 
-Q15: Were you correct? If not, verify where your mistake was.
+Q15: What do you expect to be the result when you click Execute? Run the simulation and verify your prediction.
 
-Q16: What do you expect to be the result when you click Execute? Run the simulation and verify your prediction.
-
-Q17: What would happen if you had forgotten the `HALT` instruction? How would the control unit react?
+Q16: What would happen if you had forgotten the `HALT` instruction? How would the control unit react?
