@@ -42,7 +42,7 @@ This section of the lab is based on the "Machine language" lab:
   * [Machine to Assembly Language](#machine-to-assembly-language)
     * [Executing a Program](#executing-a-program)
     * [The `HALT` Instruction](#the-halt-instruction)
-- [Logic gates and digital circuits](#logic-gates-and-digital-circuits)
+- [OPTIONAL: Logic gates and digital circuits](#optional-if-interested-in-diving-more-into-circuits)
   * [Installing SmartSim](#installing-smartsim)
   * [Getting Started With SmartSim](#getting-started-with-smartsim)
 - [Lab Notebook Questions](#lab-notebook-questions)
