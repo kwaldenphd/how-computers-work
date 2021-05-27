@@ -5,6 +5,8 @@ This tutorial is licensed under a <a href="http://creativecommons.org/licenses/b
 
 This lab covers a variety of topics related to how computers "work." This lab is designed to help you gain an understanding of how the basic logical and mathematical operations underlying computation are performed mechanically. We will also use a simulation of CPU architecture to learn more about how an instruction is processed along the CPU data path cycle and how values from memory are incorporated into CPU instructions. We are doing this to gain more experience with understanding a computer’s mechanical operations at a higher level of abstraction. Finally, this lab covers reading and writing basic machine language, to help us see the 0s and 1s underneath higher level programming and apply them to basic algorithms.
 
+[Link to lab notebook template](https://docs.google.com/document/d/1OvM0j6faXkaJAFmrTuKDjBB0aXdPyu3lqzdL37iIEGw/copy) (ND users, Google Doc)
+
 ## Acknowledgements
 
 ### Logic gates and digital circuits
@@ -246,6 +248,10 @@ E. After working through the documentation, attempt the following tasks:
 <blockquote>Describe your experience attempting each of tasks, relying on the documentation provided in the user manual. What went well? What was challenging? What lingering questions do you have about how circuits work? Include an image of your circuit.</blockquote>
 
 # Lab Notebook Questions
+
+All of the required questions are listed here for you to reference. Be sure to answer each question completely, including an explanation of how you arrived at your answer.
+ 
+[Link to lab notebook template](https://docs.google.com/document/d/1OvM0j6faXkaJAFmrTuKDjBB0aXdPyu3lqzdL37iIEGw/copy) (ND users, Google Doc)
   
 Q1: Based on the settings of the bus addresses, what values do you expect to show along the A and B bus?
 
