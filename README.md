@@ -42,6 +42,7 @@ This section of the lab is based on the "Machine language" lab:
   * [Machine to Assembly Language](#machine-to-assembly-language)
     * [Executing a Program](#executing-a-program)
     * [The `HALT` Instruction](#the-halt-instruction)
+- [Working at the Command Line](#working-at-the-command-line)
 - [OPTIONAL: Logic gates and digital circuits](#optional-if-interested-in-diving-more-into-circuits)
   * [Installing SmartSim](#installing-smartsim)
   * [Getting Started With SmartSim](#getting-started-with-smartsim)
@@ -195,6 +196,21 @@ This section of the lab is based on the "Machine language" lab:
   * You may need to change the `View as` drop-down to something other than `Instr`.
 
 48. Reset the PC to value zero and execute the program to test your prediction.
+ 
+# Working at the Command Line
+
+ *The Programming Historian* is a multi-language, peer-reviewed online resource with "novice-friendly, peer-reviewed tutorials that help humanists learn a wide range of digital tools, techniques, and workflows to facilitate research and teaching" (["The Programming Historian"](https://programminghistorian.org/))
+ 
+For the last part of this lab, we will work through the "[Introduction to the Bash Command Line](https://programminghistorian.org/en/lessons/intro-to-bash)" lesson, to apply the concepts covered in the "Bite Size Command Line" zine.
+- Ian Milligan and James Baker, "Introduction to the Bash Command Line," The Programming Historian 3 (2014), https://doi.org/10.46430/phen0037.
+ 
+Lab notebook questions related to the lesson are listed below.
+
+<blockquote>Q17: Going back to our work with navigating the command line, open a Terminal on your laptop or desktop. Describe what you see. What is your user name? What is the root?</blockquote>
+
+<blockquote>Q18: When you use the ls -l command, can you decipher the information that is displayed? Watch https://youtu.be/exQNuYxqFpA to help decode the information.</blockquote>
+
+<blockquote>Q19: Take a few moments to reflect on your experience working in the command line. How does your navigation of the computer at the command line compare other ways of navigating a computer’s user interface?</blockquote>
 
 # OPTIONAL: If interested in diving more into circuits
 
@@ -229,7 +245,6 @@ E. After working through the documentation, attempt the following tasks:
 
 <blockquote>Describe your experience attempting each of tasks, relying on the documentation provided in the user manual. What went well? What was challenging? What lingering questions do you have about how circuits work? Include an image of your circuit.</blockquote>
 
-
 # Lab Notebook Questions
   
 Q1: Based on the settings of the bus addresses, what values do you expect to show along the A and B bus?
@@ -263,3 +278,9 @@ Q14: Were you correct? If not, verify where your mistake was.
 Q15: What do you expect to be the result when you click Execute? Run the simulation and verify your prediction.
 
 Q16: What would happen if you had forgotten the `HALT` instruction? How would the control unit react?
+ 
+Q17: Going back to our work with navigating the command line, open a Terminal on your laptop or desktop. Describe what you see. What is your user name? What is the root?
+
+Q18: When you use the ls -l command, can you decipher the information that is displayed? Watch https://youtu.be/exQNuYxqFpA to help decode the information.
+
+Q19: Take a few moments to reflect on your experience working in the command line. How does your navigation of the computer at the command line compare other ways of navigating a computer’s user interface?
