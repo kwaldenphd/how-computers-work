@@ -76,7 +76,7 @@ This section of the lab is based on the "Machine language" lab:
 
 <blockquote>Q1: Based on the settings of the bus addresses, what values do you expect to show along the A and B bus?</blockquote>
 
-<blockquote>Q2: What happens when you click <Execute>? Are the <code>A bus</code> and <code>B bus</code> values what you expected? Why or why not?</blockquote>
+<blockquote>Q2: What happens when you click Execute? Are the <code>A bus</code> and <code>B bus</code> values what you expected? Why or why not?</blockquote>
   
 ## ALU Operation
 
@@ -140,7 +140,7 @@ This section of the lab is based on the "Machine language" lab:
 
 32. Set the connection switch along the `C Bus` into the register bank so that it is closed. Select the `C Bus address` to be `R0`.
 
-<blockquote>Q10: Based on these settings, what do you think will happen when you click <Execute>?</blockquote>
+<blockquote>Q9: Based on these settings, what do you think will happen when you click <Execute>?</blockquote>
   
 33. Verify your prediction using the simulator.
 
@@ -255,7 +255,7 @@ All of the required questions are listed here for you to reference. Be sure to a
   
 Q1: Based on the settings of the bus addresses, what values do you expect to show along the A and B bus?
 
-Q2: What happens when you click <Execute>? Are the `A bus` and `B bus` values what you expected? Why or why not?
+Q2: What happens when you click Execute? Are the `A bus` and `B bus` values what you expected? Why or why not?
 
 Q3: What do you think will happen to the boxes when the result is less than zero?
 
@@ -269,7 +269,7 @@ Q7: What settings (e.g., knob positions) would cause the value stored in `R3` to
 
 Q8: Set `R3` to 12 and test your answer to Q8? Did your hypothesis hold true? Why or why not?
 
-Q9: Based on these settings, what do you think will happen when you click <Execute>?
+Q9: Based on these settings, what do you think will happen when you click Execute?
 
 Q10: What settings (bus addresses, ALU operation, switches, and memory RW) would result in `R0-R3` being stored in memory location 4?
 
