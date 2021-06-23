@@ -210,7 +210,7 @@ Lab notebook questions related to the lesson are listed below.
 
 <blockquote>Q17: Going back to our work with navigating the command line, open a Terminal on your laptop or desktop. Describe what you see.</blockquote>
 
-<blockquote>Q18: When you use the ls -l command, can you decipher the information that is displayed? Watch https://youtu.be/exQNuYxqFpA to help decode the information.</blockquote>
+<blockquote>Q18: When you use the ls -l command (lower-case letter l, lower-case letter s, space, dash, lower-case letter l), can you decipher the information that is displayed? Watch https://youtu.be/exQNuYxqFpA to help decode the information.</blockquote>
 
 <blockquote>Q19: Take a few moments to reflect on your experience working in the command line. How does your navigation of the computer at the command line compare other ways of navigating a computer’s user interface?</blockquote>
 
@@ -287,6 +287,6 @@ Q16: What would happen if you had forgotten the `HALT` instruction? How would th
  
 Q17: Going back to our work with navigating the command line, open a Terminal on your laptop or desktop. Describe what you see. 
 
-Q18: When you use the ls -l command, can you decipher the information that is displayed? Watch https://youtu.be/exQNuYxqFpA to help decode the information.
+Q18: When you use the ls -l (lower-case letter l, lower-case letter s, space, dash, lower-case letter l) command, can you decipher the information that is displayed? Watch https://youtu.be/exQNuYxqFpA to help decode the information.
 
 Q19: Take a few moments to reflect on your experience working in the command line. How does your navigation of the computer at the command line compare other ways of navigating a computer’s user interface?
