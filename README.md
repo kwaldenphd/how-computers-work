@@ -140,11 +140,11 @@ This section of the lab is based on the "Machine language" lab:
 
 32. Set the connection switch along the `C Bus` into the register bank so that it is closed. Select the `C Bus address` to be `R0`.
 
-<blockquote>Q9: Based on these settings, what do you think will happen when you click <Execute>?</blockquote>
+<blockquote>Q9: Based on these settings, what do you think will happen when you click Execute?</blockquote>
   
 33. Verify your prediction using the simulator.
 
-<blockquote>Q10: What settings (bus addresses, ALU operation, switches, and memory RW) would result in <code>R0-R3</code> being stored in memory location 4?</blockquote>
+<blockquote>Q10: What settings (bus addresses, ALU operation, switches, and memory RW) would result in R0 minus R3 being stored in memory location 4?</blockquote>
 
 34. Set `R0=23` and `R3=16` and verify your prediction using the simulator.
 
@@ -160,11 +160,11 @@ This section of the lab is based on the "Machine language" lab:
 
 38. In memory location `0`, type the instruction `ADD R2 R1 R0`.
 
-<blockquote>Q11: What is the binary machine language representation of this instruction?</blockquote>
+<blockquote>Q11: Using the Instruction Set from step 35, how would you start translating the ADD R2 R1 R0 instruction from assembly or machine language to binary language?</blockquote>
 
 39. Use the `View As:` drop-down menu on the left-hand side of the window to check your result. Change the menu value to `2` to reveal the binary executable instruction. 
 
-<blockquote>Q12: Were you correct? If not, verify where your mistake was.</blockquote>
+<blockquote>Q12: How does your answer to Q11 compare to the simulator output from step 39? What discrepancies (if any) can you identify?</blockquote>
 
 ## Machine to Assembly Language
 
@@ -172,17 +172,17 @@ This section of the lab is based on the "Machine language" lab:
 
 41. On the drop-down menu next to memory location `1`, change the value from `Auto` to `2`.
 
-<blockquote>Q13: What is the assembly instruction for the following machine code? <code>1000001001001010</code></blockquote>
+<blockquote>Q13: Using the Instruction Set from step 35, how would you start to translate the binary instruction (or machine code) 1000001001001010 into assembly language or instructional language?</blockquote>
 
 42. Copy this bit string into memory location `1`.
 
 43. On the drop-down menu next to memory location `1`, change the value from `2` to `Instr` to show the binary executable instruction. 
 
-<blockquote>Q14: Were you correct? If not, verify where your mistake was.</blockquote>
-
-44. Enter the `HALT` instruction in memory location `2`.
+<blockquote>Q14: How does your answer to Q13 compare to the simulator output from step 43? What discrepancies (if any) can you identify?</blockquote>
 
 ### Executing a Program
+
+44. Enter the `HALT` instruction in memory location `2`.
 
 45. Change the contents of `R0`, `R1`, `R2`, and `R3` to 1, 3, 5, and 7, respectively.
 
@@ -208,7 +208,7 @@ For the last part of this lab, we will work through the "[Introduction to the Ba
  
 Lab notebook questions related to the lesson are listed below.
 
-<blockquote>Q17: Going back to our work with navigating the command line, open a Terminal on your laptop or desktop. Describe what you see. What is your user name? What is the root?</blockquote>
+<blockquote>Q17: Going back to our work with navigating the command line, open a Terminal on your laptop or desktop. Describe what you see.</blockquote>
 
 <blockquote>Q18: When you use the ls -l command, can you decipher the information that is displayed? Watch https://youtu.be/exQNuYxqFpA to help decode the information.</blockquote>
 
