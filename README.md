@@ -271,21 +271,21 @@ Q8: Set `R3` to 12 and test your answer to Q8? Did your hypothesis hold true? Wh
 
 Q9: Based on these settings, what do you think will happen when you click Execute?
 
-Q10: What settings (bus addresses, ALU operation, switches, and memory RW) would result in `R0-R3` being stored in memory location 4?
+Q10: What settings (bus addresses, ALU operation, switches, and memory RW) would result in R0 minus R3 being stored in memory location 4?
 
-Q11: What is the binary machine language representation of this instruction?
+Q11: Using the Instruction Set from step 35, how would you start translating the ADD R2 R1 R0 instruction from assembly or machine language to binary language?
 
-Q12: Were you correct? If not, verify where your mistake was.
+Q12: How does your answer to Q11 compare to the simulator output from step 39? What discrepancies (if any) can you identify?
 
-Q13: What is the assembly instruction for the following machine code? `1000001001001010`
+Q13: Using the Instruction Set from step 35, how would you start to translate the binary instruction (or machine code) 1000001001001010 into assembly language or instructional language?
 
-Q14: Were you correct? If not, verify where your mistake was.
+Q14: How does your answer to Q13 compare to the simulator output from step 43? What discrepancies (if any) can you identify?
 
 Q15: What do you expect to be the result when you click Execute? Run the simulation and verify your prediction.
 
 Q16: What would happen if you had forgotten the `HALT` instruction? How would the control unit react?
  
-Q17: Going back to our work with navigating the command line, open a Terminal on your laptop or desktop. Describe what you see. What is your user name? What is the root?
+Q17: Going back to our work with navigating the command line, open a Terminal on your laptop or desktop. Describe what you see. 
 
 Q18: When you use the ls -l command, can you decipher the information that is displayed? Watch https://youtu.be/exQNuYxqFpA to help decode the information.
 
