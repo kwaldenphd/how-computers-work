@@ -104,7 +104,7 @@ This section of the lab is based on the "Machine language" lab:
 
 <blockquote>Q2: Based on the settings of the bus addresses, what values do you expect to show along the A and B bus?</blockquote>
 
-<blockquote>Q3: What happens when you click <Execute>? Are the <code>A bus</code> and <code>B bus</code> values what you expected? Why or why not?</blockquote>
+<blockquote>Q3: What happens when you click Execute? Are the <code>A bus</code> and <code>B bus</code> values what you expected? Why or why not?</blockquote>
   
 ## ALU Operation
 
@@ -233,7 +233,7 @@ Q1: Describe your experience attempting each of tasks, relying on the documentat
 
 Q2: Based on the settings of the bus addresses, what values do you expect to show along the A and B bus?
 
-Q3: What happens when you click <Execute>? Are the `A bus` and `B bus` values what you expected? Why or why not?
+Q3: What happens when you click Execute? Are the `A bus` and `B bus` values what you expected? Why or why not?
 
 Q4: What do you think will happen to the boxes when the result is less than zero?
 
@@ -247,17 +247,17 @@ Q8: What settings (e.g., knob positions) would cause the value stored in `R3` to
 
 Q9: Set `R3` to 12 and test your answer to Q8? Did your hypothesis hold true? Why or why not?
 
-Q10: Based on these settings, what do you think will happen when you click <Execute>?
+Q10: Based on these settings, what do you think will happen when you click Execute?
 
-Q11: What settings (bus addresses, ALU operation, switches, and memory RW) would result in `R0-R3` being stored in memory location 4?
+Q11: What settings (bus addresses, ALU operation, switches, and memory RW) would result in R0 minus R3 being stored in memory location 4?
 
-Q12: What is the binary machine language representation of this instruction?
+Q12: Using the Instruction Set from step 40, how would you start translating the `ADD R2 R1 R0` instruction from assembly or machine language to binary language?
 
-Q13: Were you correct? If not, verify where your mistake was.
+Q13: How does your answer to Q12 compare to the simulator output from step 44? What discrepancies (if any) can you identify?
 
-Q14: What is the assembly instruction for the following machine code? `1000001001001010`
+Q14: Using the Instruction Set from step 40, how would you start to translate the binary instruction (or machine code) 1000001001001010 into assembly language or instructional language?
 
-Q15: Were you correct? If not, verify where your mistake was.
+Q15: How does your answer to Q14 compare to the simulator output from step 48? What discrepancies (if any) can you identify?
 
 Q16: What do you expect to be the result when you click Execute? Run the simulation and verify your prediction.
 
