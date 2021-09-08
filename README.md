@@ -9,7 +9,7 @@ This lab covers a variety of topics related to how computers "work." This lab is
 
 ## Acknowledgements
 
-### Logic gates and digital circuits
+**Logic gates and digital circuits**
 This section of the lab incorporates elements of the "Log gates & digital circuits" lab:
 - Written: Marge M. Coahran, April 2008
 - Revised: Jerod Weinman, 17 March 2009
@@ -18,14 +18,14 @@ This section of the lab incorporates elements of the "Log gates & digital circui
 - Revised: Jerod Weinman, 3 April 2014
 - Revised: Jerod Weinman, 1 April 2015
 
-### Data path and memory
+**Data path and memory**
 This section of the lab is based on the "Data path & memory" lab:
 - Created: Jerod Weinman, 16 March 2009
 - Modified: Jerod Weinman, 20 April 2011
 - Modified: Jerod Weinman, 4 April 2014
 - Portions adapted from Dave Reed, “A Balanced Introduction to Computer Science,” Exercises 14.1-14.6.
 
-### Machine language
+**Machine language**
 This section of the lab is based on the "Machine language" lab:
 - Created: Jerod Weinman, March 16, 2009
 - Revised: Janet Davis, April 27, 2012
@@ -51,6 +51,8 @@ This section of the lab is based on the "Machine language" lab:
 - [Lab Notebook Questions](#lab-notebook-questions)
 
 # Data path and memory
+
+[Link to lab overview for the first two sections of this lab](https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=74800f15-b4f3-4dd4-8b41-ad8201619ee4) (Panopto, ND users)
 
 ## CPU Data Path
 
@@ -200,6 +202,8 @@ This section of the lab is based on the "Machine language" lab:
 48. Reset the PC to value zero and execute the program to test your prediction.
  
 # Working at the Command Line
+
+[Link to lab overview for the last section of this lab](https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ab7bceff-d679-4286-b91e-ad8201619fa1) (Panopto, ND users)
 
  *The Programming Historian* is a multi-language, peer-reviewed online resource with "novice-friendly, peer-reviewed tutorials that help humanists learn a wide range of digital tools, techniques, and workflows to facilitate research and teaching" (["The Programming Historian"](https://programminghistorian.org/))
  
