@@ -116,7 +116,7 @@ This section of the lab is based on the "Machine language" lab:
 
 <blockquote>Q7: What settings (e.g., knob positions) would cause the value stored in <code>R3</code> to be doubled?</blockquote>
 
-<blockquote>Q8: Set <code>R3</code> to 12 and test your answer to Q8? Did your hypothesis hold true? Why or why not?</blockquote>
+<blockquote>Q8: Set <code>R3</code> to 12 and test your answer to Q7? Did your hypothesis hold true? Why or why not?</blockquote>
 
 ## CPU and memory
 
@@ -271,7 +271,7 @@ Q6: Describe what happened and the output in the previous step.
 
 Q7: What settings (e.g., knob positions) would cause the value stored in `R3` to be doubled?
 
-Q8: Set `R3` to 12 and test your answer to Q8? Did your hypothesis hold true? Why or why not?
+Q8: Set `R3` to 12 and test your answer to Q7? Did your hypothesis hold true? Why or why not?
 
 Q9: Based on these settings, what do you think will happen when you click Execute?
 
