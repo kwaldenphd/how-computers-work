@@ -162,7 +162,7 @@ This section of the lab is based on the "Machine language" lab:
 
 38. In memory location `0`, type the instruction `ADD R2 R1 R0`.
 
-<blockquote>Q11: Using the Instruction Set from step 35, how would you start translating the ADD R2 R1 R0 instruction from assembly or machine language to binary language?</blockquote>
+<blockquote>Q11: Using the Instruction Set from step 35, how would you start translating the ADD R2 R1 R0 instruction from assembly or instructional language to binary language?</blockquote>
 
 39. Use the `View As:` drop-down menu on the left-hand side of the window to check your result. Change the menu value to `2` to reveal the binary executable instruction. 
 
@@ -277,7 +277,7 @@ Q9: Based on these settings, what do you think will happen when you click Execut
 
 Q10: What settings (bus addresses, ALU operation, switches, and memory RW) would result in R0 minus R3 being stored in memory location 4?
 
-Q11: Using the Instruction Set from step 35, how would you start translating the ADD R2 R1 R0 instruction from assembly or machine language to binary language?
+Q11: Using the Instruction Set from step 35, how would you start translating the ADD R2 R1 R0 instruction from assembly or instructional language to binary language?
 
 Q12: How does your answer to Q11 compare to the simulator output from step 39? What discrepancies (if any) can you identify?
 
