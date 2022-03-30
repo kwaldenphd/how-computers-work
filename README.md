@@ -5,7 +5,19 @@ This tutorial is licensed under a <a href="http://creativecommons.org/licenses/b
 
 This lab covers a variety of topics related to how computers "work." This lab is designed to help you gain an understanding of how the basic logical and mathematical operations underlying computation are performed mechanically. We will also use a simulation of CPU architecture to learn more about how an instruction is processed along the CPU data path cycle and how values from memory are incorporated into CPU instructions. We are doing this to gain more experience with understanding a computer’s mechanical operations at a higher level of abstraction. Finally, this lab covers reading and writing basic machine language, to help us see the 0s and 1s underneath higher level programming and apply them to basic algorithms.
 
-[Link to lab notebook template](https://docs.google.com/document/d/1OvM0j6faXkaJAFmrTuKDjBB0aXdPyu3lqzdL37iIEGw/copy) (ND users, Google Doc)
+<table>
+ <tr><td>
+<img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
+  <td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=63a3251a-e1d0-4b36-b002-ad3d00cb609c">Lab overview</a></td>
+  </tr>
+  </table>
+  
+<table>
+ <tr><td>
+<img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
+<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=d55a3a86-9e99-4008-9e4f-ae510174ce65">Lecture/live coding playlist</a></td>
+  </tr>
+  </table>
 
 ## Acknowledgements
 
@@ -35,6 +47,8 @@ This section of the lab is based on the "Machine language" lab:
 
 # Table of Contents
 
+- [Lecture and Live Coding](#lecture-and-live-coding)
+- [Lab Notebook Template](#lab-notebook-template)
 - [Data path and memory](#data-path-and-memory)
   * [CPU Data Path](#cpu-data-path)
   * [ALU Operation](#alu-operation)
@@ -50,9 +64,49 @@ This section of the lab is based on the "Machine language" lab:
   * [Getting Started With SmartSim](#getting-started-with-smartsim)
 - [Lab Notebook Questions](#lab-notebook-questions)
 
+# Lecture and Live Coding
+
+Throughout this lab, you will see a Panopto icon at the start of select sections.
+
+This icon indicates there is lecture/live coding asynchronous content that accompanies this section of the lab. 
+
+You can click the link in the figure caption to access these materials (ND users only).
+
+Example:
+
+<table>
+ <tr><td>
+<img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
+  <td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=63a3251a-e1d0-4b36-b002-ad3d00cb609c">Lab overview</a></td>
+  </tr>
+  </table>
+  
+<table>
+ <tr><td>
+<img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
+<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=d55a3a86-9e99-4008-9e4f-ae510174ce65">Lecture/live coding playlist</a></td>
+  </tr>
+  </table>
+
+# Lab Notebook Template
+
+[Link to lab notebook template](https://docs.google.com/document/d/1OvM0j6faXkaJAFmrTuKDjBB0aXdPyu3lqzdL37iIEGw/copy) (ND users, Google Doc)
+
 # Data path and memory
 
-[Link to lab overview for the first two sections of this lab](https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=74800f15-b4f3-4dd4-8b41-ad8201619ee4) (Panopto, ND users)
+<table>
+ <tr><td>
+<img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
+  <td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=63a3251a-e1d0-4b36-b002-ad3d00cb609c">Lab overview</a></td>
+  </tr>
+  </table>
+  
+<table>
+ <tr><td>
+<img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
+<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8c5bb81d-6381-48b7-806e-ad82016237db">How Computers Work</a></td>
+  </tr>
+  </table>
 
 ## CPU Data Path
 
@@ -203,7 +257,12 @@ This section of the lab is based on the "Machine language" lab:
  
 # Working at the Command Line
 
-[Link to lab overview for the last section of this lab](https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ab7bceff-d679-4286-b91e-ad8201619fa1) (Panopto, ND users)
+<table>
+ <tr><td>
+<img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
+<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=879d98fd-b758-412a-982b-ad3d00c65d52">Command Line Interface</a></td>
+  </tr>
+  </table>
 
  *The Programming Historian* is a multi-language, peer-reviewed online resource with "novice-friendly, peer-reviewed tutorials that help humanists learn a wide range of digital tools, techniques, and workflows to facilitate research and teaching" (["The Programming Historian"](https://programminghistorian.org/))
  
