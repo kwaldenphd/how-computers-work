@@ -204,6 +204,13 @@ Example:
 
 34. Set `R0=23` and `R3=16` and verify your prediction using the simulator.
 
+<table>
+ <tr><td>
+<img src="https://www.freeiconspng.com/thumbs/survey-icon/survey-icon-12.png" alt="Clipboard icon" width="50"/></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSfsUlpypqX9m1TS5Rz074AHlWcLJxJlmhzDtLwve9gXJPkIKg/viewform?usp=sf_link">How Computers Work Lecture Check-In</a></td>
+  </tr>
+  </table>
+
 # Machine Language
 
 35. Open the [Knob & Switch Machine Language Instruction Set](http://www.dave-reed.com/book/Chapter14/instructions.html) in a new browser window. 
@@ -276,6 +283,13 @@ Lab notebook questions related to the lesson are listed below.
 <blockquote>Q18: When you use the ls -l command (lower-case letter l, lower-case letter s, space, dash, lower-case letter l), can you decipher the information that is displayed? Watch https://youtu.be/exQNuYxqFpA to help decode the information.</blockquote>
 
 <blockquote>Q19: Take a few moments to reflect on your experience working in the command line. How does your navigation of the computer at the command line compare other ways of navigating a computer’s user interface?</blockquote>
+
+<table>
+ <tr><td>
+<img src="https://www.freeiconspng.com/thumbs/survey-icon/survey-icon-12.png" alt="Clipboard icon" width="50"/></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSdq6gyJ26OLOWUVG4c1HVhiXPz3Q0b68Gqv1r0qfQhSR0zW9Q/viewform?usp=sf_link">Operating Systems Lecture Check-In</a></td>
+  </tr>
+  </table>
 
 # OPTIONAL: If interested in diving more into circuits
 
