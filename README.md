@@ -273,10 +273,81 @@ Example:
 
  *The Programming Historian* is a multi-language, peer-reviewed online resource with "novice-friendly, peer-reviewed tutorials that help humanists learn a wide range of digital tools, techniques, and workflows to facilitate research and teaching" (["The Programming Historian"](https://programminghistorian.org/))
  
-For the last part of this lab, we will work through the "[Introduction to the Bash Command Line](https://programminghistorian.org/en/lessons/intro-to-bash)" lesson, to apply the concepts covered in the "Bite Size Command Line" zine.
+For the last part of this lab, we will work through an adapted version of the "[Introduction to the Bash Command Line](https://programminghistorian.org/en/lessons/intro-to-bash)" lesson, to apply the concepts covered in the "Bite Size Command Line" zine.
 - Ian Milligan and James Baker, "Introduction to the Bash Command Line," The Programming Historian 3 (2014), https://doi.org/10.46430/phen0037.
  
-Lab notebook questions related to the lesson are listed below.
+The text content below is adapted from the *PH* lesson as well as Miriam Posner's "[Getting Started With Unix](https://github.com/miriamposner/unix/blob/main/getting_started_with_commandline.md)" tutorial.
+
+The usual way that computer users today interact with their system is through a Graphical-User Interface, or GUI. This means that when you go into a folder, you click on a picture of a file folder; when you run a program, you click on it; and when you browse the web, you use your mouse to interact with various elements on a webpage. Before the rise of GUIs in the late 1980s, however, the primary way to interact with a computer was through a command-line interface [CLI].
+
+Command-line interfaces have advantages for computer users who need more precision in their work – such as digital historians. They allow for more detail when running some programs, as you can add modifiers to specify exactly how you want your program to run. Furthermore, they can be easily automated through scripts, which are essentially recipes of text-based commands.
+
+There are two main command-line interfaces, or "shells." On OS [Mac] or many Linux installations, the shell is known as `bash`, or the ‘Bourne-again shell.’ For users on Windows-based systems, the command-line interface is by default `MS-DOS-based`, which uses different commands and syntax, but can often achieve similar tasks. This tutorial provides a basic introduction to the `bash` terminal, and Windows users can follow along by installing popular shells such as Cygwin or Git Bash [details and instructions provided below].
+
+## For Windows Users
+
+For Mac users (and most Linux installations), you’re in luck — you already have a bash shell installed. 
+
+Windows users will need to take one extra step and install Git Bash. 
+- Download the most recent ‘Full installer’ at [this page](https://git-for-windows.github.io)
+- Instructions for installation are available at [Open Hatch](https://web.archive.org/web/20190114082523/https://openhatch.org/missions/windows-setup/install-git-bash)
+
+## Opening Your Shell
+
+*NOTE: The following screenshots show the Mac OS terminal/shell. Folks with other operating systems should still be able to follow the procedural steps.*
+
+<p align='center'><figure><img src="https://programminghistorian.org/images/intro-to-bash/Terminal.png" alt="Image of Mac Shell icon">
+ <figcaption>The Terminal.app program on OS </figcaption></figure></p>
+ 
+Mac:
+- By default, the shell is located in `Applications -> Utilities -> Terminal`
+
+Windows:
+- Run Git Bash from the directory that you installed it in. You will have to run it as an administrator - to do so, right click on the program and select 'Run as Administrator.'
+
+<p align='center'><figure><img src="https://programminghistorian.org/images/intro-to-bash/Blank-Terminal.png" alt="Image of Mac Shell">
+ <figcaption>A blank terminal screen on an OS workstation</figcaption></figure></p>
+ 
+When the terminal or shell is running, you will see a window that looks similar to the image above.
+
+<p align='center'><figure><img src="https://programminghistorian.org/images/intro-to-bash/Settings.png" alt="Image of Mac terminal settings">
+ <figcaption>The Settings Screen on the OS X Terminal Shell Application</figcaption></figure></p>
+ 
+For Mac users who want to customize the terminal's visual appearance:
+- Open the `Settings` menu (in `Preferences`, under `Terminal`)
+- Click the `Settings` tab to change the color scheme
+
+Windows users can right-click on the application's top bar and select `Properties` to open the `Properties` tab.
+
+## Terminal Wayfinding
+
+<p align='center'><img src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-1.jpeg" alt="Image of Mac shell"></p>
+
+*NOTE: The following text and images are adapted from UCLA faculty member Miriam Posner's "[Getting Started With Unix](https://github.com/miriamposner/unix/blob/main/getting_started_with_commandline.md)" tutorial*
+
+This is a terminal window, also called a `shell`. 
+
+The active cursor showing up in the window is a `command prompt`. This is where you will type commands or instructions.
+
+First, we can check your username using the `whoami` command.
+
+Type `whoami` in the shell and hit the `Enter` or `Return` key.
+
+The terminal returns your username.
+
+The terminal's command prompt is ready for another command or instruction.
+
+Let's try another command- this type, we'll use `echo` to repeat a set of characters in quotation marks.
+
+Type `echo 'Hello world!' into the terminal and hit the 'Enter' or 'Return' key.
+
+The `echo` command instructs the terminal to repeat whichever characters you include in the quotation marks.
+
+## Moving Around Your Computer
+
+
+
+! It has a command prompt waiting for you to tell it what to do. You can tell it's waiting for you to type something because it displays a % (or a $, they mean the same thing).
 
 <blockquote>Q17: Going back to our work with navigating the command line, open a Terminal on your laptop or desktop. Describe what you see.</blockquote>
 
