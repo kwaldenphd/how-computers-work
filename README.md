@@ -284,7 +284,7 @@ Command-line interfaces have advantages for computer users who need more precisi
 
 There are two main command-line interfaces, or "shells." On OS [Mac] or many Linux installations, the shell is known as `bash`, or the ‘Bourne-again shell.’ For users on Windows-based systems, the command-line interface is by default `MS-DOS-based`, which uses different commands and syntax, but can often achieve similar tasks. This tutorial provides a basic introduction to the `bash` terminal, and Windows users can follow along by installing popular shells such as Cygwin or Git Bash [details and instructions provided below].
 
-## For Windows Users
+### For Windows Users
 
 For Mac users (and most Linux installations), you’re in luck — you already have a bash shell installed. 
 
@@ -343,11 +343,115 @@ Type `echo 'Hello world!' into the terminal and hit the 'Enter' or 'Return' key.
 
 The `echo` command instructs the terminal to repeat whichever characters you include in the quotation marks.
 
-## Moving Around Your Computer
+## Typing Commands in the Terminal
 
+You may have already noticed you're not able to navigate the terminal using your mouse or cursor.
 
+We can navigate the terminal using the keyboard.
 
-! It has a command prompt waiting for you to tell it what to do. You can tell it's waiting for you to type something because it displays a % (or a $, they mean the same thing).
+The `up` and `down` arrow keys let you move back (up) and forward (down) through previously typed commands. 
+
+The `left` and `right` arrow keys let you move within characters or symbols for a specific command.
+
+Press the `up` arrow once to show the previously-typed `echo` command.
+
+Then, use the `left` and `right` arrow keys to navigate to the characters within the quotation marks and replace them with another word or phrase of your choosing.
+
+Press `Return` or `Enter` to run the modified command. 
+
+A couple other useful navigation tools:
+- Press `Control` + `A` to move to the start of a line
+- Press `Control` + `E` to move to the end of a line
+- Type `clear` into the terminal and press `Return`/`Enter` to clear the screen
+- When you're ready to close the terminal window, type `exit` and press `Return`/`Enter`
+
+<p align='center'><img src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-17.jpeg" alt="Diagram illustrating terminal syntax"></p>
+
+A couple notes on terminal syntax:
+- `commands` tell the computer to perform an action 
+- `options` modify the command and use a hyphen (`-`) symbol
+  * Sometimes `options` are called `flags` or `switches`
+- `arguments` specify what the command operation will be performed on (i.e. a specific file or directory)
+
+Not all commands require arguments or options, but some commands can have one or more of each.
+
+You can also chain multiple commands together using the vertical bar `|` symbol. This is often called a `pipe`.
+
+## Navigating Your File System
+
+Before we start moving around, let's use the `pwd` (print working directory` command to show your current location.
+
+Type `pwd` in the terminal and press `Enter` or `Return`.
+
+Your output might look something like this:
+```
+/Users/kwalden
+```
+
+This directory information is called a `path` (sometimes called a `file path` when dealing with specific files).
+- The backslash `/` at the start of the path stands for your computer's `root`
+- Subsequent slashes indicate subfolders or subdirectories
+
+So in the `/Users/kwalden` example, the terminal is running in the `kwalden` subfolder which is located in the `Users` folder. The `Users` folder is located at my computer's `root`.
+
+<p align='center'><img src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-4.jpeg" alt="Diagram illustrating computer directory structure"></p>
+
+The inverted tree diagram shown above shows one example of a computer's file system.
+- The `root` (top of the tree) is your computer's hard drive.
+- The next set of branches are a set of folders (`directories`) that are used by everyone who uses the computer
+- The `users` folder includes different specific user profiles
+- The folders located under a specific username are associated with that user profile
+  * These folders commonly include `Applications`, `Desktop`, `Documents`, `Downloads`, etc.
+
+If you have ever used `File Explorer` (Windows) or `Finder` (Mac), you have navigated this tree structure using the graphical user interface (GUI).
+
+Now let's think about how we navigate this structure using the command line interface (CLI).
+
+### `ls`
+
+Typically by default, your terminal will open in the folder or directory for your user profile.
+- But you can check this using the `pwd` (print working directory) command
+
+Let's see what other files and subdirectories are located in your current path by using the list command (`ls`).
+
+Type `ls` in the terminal and press `Enter`/`Return`.
+
+<p align='center'><img src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-6.jpeg" alt="Terminal screenshot showing directory contents"></p>
+
+Items that are followed by a file extension (e.g. `.docx`, `.txt`, `.xlsx`, etc) are generally individual files. Items that do not have a file extension are typically subfolders or subdirectories.
+
+### `cd`
+
+We can move down the tree using the `change directory` command (`cd`).
+
+Let's move from your user profile folder to the Desktop.
+
+Type `cd Desktop` and press `Enter`/`Return`.
+- You can also type `cd Desk` and press the `Tab` key (before `Enter`/`Return`) to autocomplete the command
+
+When using the `cd` (change directory) command, we are navigating the computer's file system using `relative paths`. This means the location information we are specifying in the terminal is relative to our current position or location in the file system. 
+
+The previous `cd Desktop` command is an example of a relative path.
+
+`Absolute paths` always start at the `root` and use backslash `/` symbols to indicate subfolders.
+- `/Users/kwalden/Desktop` would be the absolute path version of the previous command
+- NOTE: Be sure to replace `kwalden` with your user name
+
+We can use the `ls` command again to see the materials located on our Desktop.
+
+We can also move back up the file system tree using the `cd` command.
+
+Instead of using `cd`  followed by a relative or absolute path, we can use `cd ..` (`cd` followed by a space and two periods) to move up one level in the tree.
+
+Type `cd ..` in the terminal and press `Enter`/`Return`. You can test using `pwd` if needed, but you should be back in the specific user profile folder.
+
+## Additional Resources
+
+If you want to further explore command line syntax:
+- Software Carpentries, "[The Unix Shell](https://swcarpentry.github.io/shell-novice/)" lesson
+- Mary Brent, "[Linux Command Cheat Sheet](https://www.guru99.com/linux-commands-cheat-sheet.html)", *Guru99* (28 May 2022)
+- Ian Milligan and James Baker, "Introduction to the Bash Command Line," The Programming Historian 3 (2014), https://doi.org/10.46430/phen0037.
+- Miriam Posner, "[Getting Started With Unix](https://github.com/miriamposner/unix/blob/main/getting_started_with_commandline.md)" tutorial
 
 <blockquote>Q17: Going back to our work with navigating the command line, open a Terminal on your laptop or desktop. Describe what you see.</blockquote>
 
