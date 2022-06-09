@@ -117,6 +117,8 @@ Example:
 
 ## CPU Data Path
 
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_1.png?raw=true"></p>
+
 1. Open the [Knob & Switch Datapath 1 Simulator](http://www.dave-reed.com/book/Chapter14/datapath/datapath.html) in a new browser window. 
 
 2. This simple CPU contains four registers, but no control unit. You will be the control unit that directs which registers are operated on and which operations are done.
@@ -126,6 +128,8 @@ Example:
 <blockquote>CPU stands for central processing unit. ALU stands for arithmetic logic unit.</blockquote>
 
 4. Click on each knob to turn it.
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_2.png?raw=true"></p>
 
 5. Set the `A bus` address to `R2` and the `B bus` address to `R1`. 
 
@@ -137,6 +141,8 @@ Example:
 
 9. Check that `Animation Speed` is set on `Medium` and `Number Base` is set to `+-10.`
 
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_2.png?raw=true"></p>
+
 <blockquote>Q1: Based on the settings of the bus addresses, what values do you expect to show along the A and B bus?</blockquote>
 
 <blockquote>Q2: What happens when you click Execute? Are the <code>A bus</code> and <code>B bus</code> values what you expected? Why or why not?</blockquote>
@@ -147,6 +153,8 @@ Example:
 
 11. In the bottom right of the simulator is yet another knob entitled `ALU Operation.` This knob instructs the ALU what operation to perform on the data it has received. 
 
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_4.png?raw=true"></p>
+
 12. Click the knob so that it points to the instruction `A-B.`
 
 13. The box to the left of the ALU knob is a diagnostic. It reports information based on the input provided to the ALU.
@@ -154,6 +162,8 @@ Example:
 14. Right now, `zero` has a check next to it because the default result is zero. You should see this reflected in the `C` textbox.
 
 <blockquote>Q3: What do you think will happen to the boxes when the result is less than zero?</blockquote>
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_4.png?raw=true"></p>
 
 15. Check that the simulator's current settings to make sure it is set to run `A-B`, where `A` is `R2` and `B` is `R1`.
 
@@ -169,6 +179,8 @@ Example:
 
 19. The `C Bus Address` knob in the top-left of the simulator tells the CPU which register it should use to store the calculated result. 
 
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_5.png?raw=true"></p>
+
 20. Click the knob to store the result in `R3`.
 
 21. Run a simulation of a full cycle to subtract `R1` from `R2` and store the result in `R3`.
@@ -183,6 +195,8 @@ Example:
 
 22. So far, we have only been using data from a limited number of CPU registers. Actual computers have much more storage in their main memory. Data gets from memory into the registers through additional communication channels.
 
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_6.png?raw=true"></p>
+
 23. Open the [Knob & Switch Datapath and Memory Simulator](http://www.dave-reed.com/book/Chapter14/dpandmem.html) in a new browser window. 
 
 24. Two notable components here are the memory and bus switches. The memory values on the left of the simulator represent `RAM`. The button next to each memory location indicates which location will be read (`R`) from or written to (`W`) in one cycle of the machine.
@@ -191,15 +205,23 @@ Example:
 
 26. Click these connections to toggle (open and close) the switches. Note that an open switch looks like an open door. No signal will flow across an open switch. A closed switch allows the signal to flow across it. 
 
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_7.png?raw=true"></p>
+
 27. Open the circuit from the ALU into the `C bus`, so that there is no longer a connection.
 
 28. We also have two new connections along the `C bus`. The `C bus` is the pathway into the register bank. 
 
 29. The connection pointing up from the `Main Memory Bus` into `C bus` allows us put memory values into registers, rather than ALU results. 
 
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_8.png?raw=true"></p>
+
 30. Click to close the connection from the `Main Memory bus` to the `C bus`. The connection from the `C bus` to the memory bus should be open.
 
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_9.png?raw=true"></p>
+
 31. Put the value 42 into memory location 0, and select it as the `RW` location.
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_10.png?raw=true"></p>
 
 32. Set the connection switch along the `C Bus` into the register bank so that it is closed. Select the `C Bus address` to be `R0`.
 
@@ -220,6 +242,8 @@ Example:
 
 # Machine Language
 
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_11.png?raw=true"></p>
+
 35. Open the [Knob & Switch Machine Language Instruction Set](http://www.dave-reed.com/book/Chapter14/instructions.html) in a new browser window. 
 
 36. Open the [Knob & Switch Machine Simulator](http://www.dave-reed.com/book/Chapter14/machine.html) in a second new browser window. 
@@ -228,9 +252,15 @@ Example:
 
 ## Assembly to Machine Language
 
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_12.png?raw=true"></p>
+
 38. In memory location `0`, type the instruction `ADD R2 R1 R0`.
 
 <blockquote>Q11: Using the Instruction Set from step 35, how would you start translating the ADD R2 R1 R0 instruction from assembly (or instructional language) to binary language (or machine language)?</blockquote>
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_13.png?raw=true"></p>
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_14.png?raw=true"></p>
 
 39. Use the `View As:` drop-down menu on the left-hand side of the window to check your result. Change the menu value to `2` to reveal the binary executable instruction. 
 
@@ -240,9 +270,15 @@ Example:
 
 40. Refresh the window to reset the simulator to default settings.
 
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_13.png?raw=true"></p>
+
 41. On the drop-down menu next to memory location `1`, change the value from `Auto` to `2`.
 
 <blockquote>Q13: Using the Instruction Set from step 35, how would you start to translate the binary instruction (or machine code) 1000001001001010 into assembly language or instructional language?</blockquote>
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_15.png?raw=true"></p>
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_16.png?raw=true"></p>
 
 42. Copy this bit string into memory location `1`.
 
@@ -252,11 +288,17 @@ Example:
 
 ### Executing a Program
 
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_18.png?raw=true"></p>
+
 44. Enter the `HALT` instruction in memory location `2`.
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_17.png?raw=true"></p>
 
 45. Change the contents of `R0`, `R1`, `R2`, and `R3` to 1, 3, 5, and 7, respectively.
 
 46. Click `Reset` above the `PC` (Program Counter) to initialize it to zero.
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_19.png?raw=true"></p>
 
 <blockquote>Q15: What do you expect to be the result when you click Execute? Run the simulation and verify your prediction.</blockquote>
   
@@ -303,7 +345,7 @@ The text content below is adapted from the *PH* lesson as well as Miriam Posner'
 
 *NOTE: The following screenshots show the Mac OS terminal/shell. Folks with other operating systems should still be able to follow the procedural steps.*
 
-<p align="center"><img align="center" src="https://programminghistorian.org/images/intro-to-bash/Terminal.png" alt="Image of Mac Shell icon"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_A1.png?raw=true" alt="Image of Mac Shell icon"></p>
  
 54. To launch the terminal...
 
@@ -313,11 +355,11 @@ Mac:
 Windows:
 - Run Git Bash from the directory that you installed it in. You will have to run it as an administrator - to do so, right click on the program and select 'Run as Administrator.'
 
-<p align="center"><img align="center" src="https://programminghistorian.org/images/intro-to-bash/Blank-Terminal.png" alt="Image of Mac Shell"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_A.png?raw=true" alt="Image of Mac Shell"></p>
  
 55. When the terminal or shell is running, you will see a window that looks similar to the image above.
 
-<p align="center"><img align="center" src="https://programminghistorian.org/images/intro-to-bash/Settings.png" alt="Image of Mac terminal settings"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_B.png?raw=true" alt="Image of Mac terminal settings"></p>
  
 56. For Mac users who want to customize the terminal's visual appearance:
 - Open the `Settings` menu (in `Preferences`, under `Terminal`)
@@ -327,7 +369,7 @@ Windows:
 
 ## Terminal Wayfinding
 
-<p align="center"><img align="center" src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-1.jpeg" alt="Image of Mac shell"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_C.jpeg?raw=true" alt="Image of Mac shell"></p>
 
 *NOTE: The following text and images are adapted from UCLA faculty member Miriam Posner's "[Getting Started With Unix](https://github.com/miriamposner/unix/blob/main/getting_started_with_commandline.md)" tutorial*
 
@@ -371,7 +413,7 @@ Windows:
 - Type `clear` into the terminal and press `Return`/`Enter` to clear the screen
 - When you're ready to close the terminal window, type `exit` and press `Return`/`Enter`
 
-<p align="center"><img align="center" src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-17.jpeg" alt="Diagram illustrating terminal syntax"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_D.jpeg?raw=true" alt="Diagram illustrating terminal syntax"></p>
 
 75. A couple notes on terminal syntax:
 - `commands` tell the computer to perform an action 
@@ -400,7 +442,7 @@ Windows:
 
 82. So in the `/Users/kwalden` example, the terminal is running in the `kwalden` subfolder which is located in the `Users` folder. The `Users` folder is located at my computer's `root`.
 
-<p align="center"><img align="center" src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-4.jpeg" alt="Diagram illustrating computer directory structure"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_E.jpeg?raw=true" alt="Diagram illustrating computer directory structure"></p>
 
 83. The inverted tree diagram shown above shows one example of a computer's file system.
 - The `root` (top of the tree) is your computer's hard drive.
@@ -422,7 +464,7 @@ Windows:
 
 88. Type `ls` in the terminal and press `Enter`/`Return`.
 
-<p align="center"><img align="center" src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-6.jpeg" alt="Terminal screenshot showing directory contents"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_F.jpeg?raw=true" alt="Terminal screenshot showing directory contents"></p>
 
 89. Items that are followed by a file extension (e.g. `.docx`, `.txt`, `.xlsx`, etc) are generally individual files. Items that do not have a file extension are typically subfolders or subdirectories.
 
