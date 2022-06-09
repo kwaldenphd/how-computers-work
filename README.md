@@ -296,7 +296,7 @@ Windows users will need to take one extra step and install Git Bash.
 
 *NOTE: The following screenshots show the Mac OS terminal/shell. Folks with other operating systems should still be able to follow the procedural steps.*
 
-<p align='center'><figure><img src="https://programminghistorian.org/images/intro-to-bash/Terminal.png" alt="Image of Mac Shell icon">
+<p><figure><img align="center", src="https://programminghistorian.org/images/intro-to-bash/Terminal.png" alt="Image of Mac Shell icon">
  <figcaption>The Terminal.app program on OS </figcaption></figure></p>
  
 Mac:
@@ -305,12 +305,12 @@ Mac:
 Windows:
 - Run Git Bash from the directory that you installed it in. You will have to run it as an administrator - to do so, right click on the program and select 'Run as Administrator.'
 
-<p align='center'><figure><img src="https://programminghistorian.org/images/intro-to-bash/Blank-Terminal.png" alt="Image of Mac Shell">
+<p><figure><img align="center", src="https://programminghistorian.org/images/intro-to-bash/Blank-Terminal.png" alt="Image of Mac Shell">
  <figcaption>A blank terminal screen on an OS workstation</figcaption></figure></p>
  
 When the terminal or shell is running, you will see a window that looks similar to the image above.
 
-<p align='center'><figure><img src="https://programminghistorian.org/images/intro-to-bash/Settings.png" alt="Image of Mac terminal settings">
+<p><figure><img align="center", src="https://programminghistorian.org/images/intro-to-bash/Settings.png" alt="Image of Mac terminal settings">
  <figcaption>The Settings Screen on the OS X Terminal Shell Application</figcaption></figure></p>
  
 For Mac users who want to customize the terminal's visual appearance:
@@ -321,7 +321,7 @@ Windows users can right-click on the application's top bar and select `Propertie
 
 ## Terminal Wayfinding
 
-<p align='center'><img src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-1.jpeg" alt="Image of Mac shell"></p>
+<p><img align="center", src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-1.jpeg" alt="Image of Mac shell"></p>
 
 *NOTE: The following text and images are adapted from UCLA faculty member Miriam Posner's "[Getting Started With Unix](https://github.com/miriamposner/unix/blob/main/getting_started_with_commandline.md)" tutorial*
 
@@ -365,7 +365,7 @@ A couple other useful navigation tools:
 - Type `clear` into the terminal and press `Return`/`Enter` to clear the screen
 - When you're ready to close the terminal window, type `exit` and press `Return`/`Enter`
 
-<p align='center'><img src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-17.jpeg" alt="Diagram illustrating terminal syntax"></p>
+<p><img align="center", src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-17.jpeg" alt="Diagram illustrating terminal syntax"></p>
 
 A couple notes on terminal syntax:
 - `commands` tell the computer to perform an action 
@@ -394,7 +394,7 @@ This directory information is called a `path` (sometimes called a `file path` wh
 
 So in the `/Users/kwalden` example, the terminal is running in the `kwalden` subfolder which is located in the `Users` folder. The `Users` folder is located at my computer's `root`.
 
-<p align='center'><img src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-4.jpeg" alt="Diagram illustrating computer directory structure"></p>
+<p><img align="center", src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-4.jpeg" alt="Diagram illustrating computer directory structure"></p>
 
 The inverted tree diagram shown above shows one example of a computer's file system.
 - The `root` (top of the tree) is your computer's hard drive.
@@ -416,7 +416,7 @@ Let's see what other files and subdirectories are located in your current path b
 
 Type `ls` in the terminal and press `Enter`/`Return`.
 
-<p align='center'><img src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-6.jpeg" alt="Terminal screenshot showing directory contents"></p>
+<p><img align="center", src="https://raw.githubusercontent.com/miriamposner/unix/main/steps-getting_started_with_unix/step-6.jpeg" alt="Terminal screenshot showing directory contents"></p>
 
 Items that are followed by a file extension (e.g. `.docx`, `.txt`, `.xlsx`, etc) are generally individual files. Items that do not have a file extension are typically subfolders or subdirectories.
 
