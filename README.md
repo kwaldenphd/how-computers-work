@@ -375,7 +375,7 @@ Fetch-execute cycle:
 
 <p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Control_Unit.png?raw=true" width="500"></p>
 
-<blockquote>Q17: What can you tell about how the simulator's control unit is interpeting the assembly language instructions? NOTE: You do not need to map out the exact assembly-machine language translation. Describe in general how assembly language instructions are handled by the control unit.</blockquote>
+<blockquote>Q17: What can you tell about how the simulator's control unit is interpreting the assembly language instructions? NOTE: You do not need to map out the exact assembly-machine language translation. Describe in general how assembly language instructions are handled by the control unit.</blockquote>
 
 Think about how many discrete instructions are part of this program. Since there are only four instructions, the simulator should only need 4 cycles to finish the program.
 
@@ -462,7 +462,7 @@ Q15: When will this program stop or end?
 
 Q16: Test your prediction using the simulator. What parts of your hypothesis held true? What parts did not?
 
-Q17: What can you tell about how the simulator's control unit is interpeting the assembly language instructions? NOTE: You do not need to map out the exact assembly-machine language translation. Describe in general how assembly language instructions are handled by the control unit.
+Q17: What can you tell about how the simulator's control unit is interpreting the assembly language instructions? NOTE: You do not need to map out the exact assembly-machine language translation. Describe in general how assembly language instructions are handled by the control unit.
 
 Q18: What settings or values would we need to modify for the program to stop after executing the last instruction?
 
