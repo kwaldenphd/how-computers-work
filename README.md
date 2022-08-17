@@ -1,16 +1,66 @@
 # How Computers Work (Part 1): Hardware
 
-## CC Statement
+<a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license"><img style="border-width: 0;" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" alt="Creative Commons License" /></a>This tutorial was written by Katherine Walden and is licensed under a <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
-## Overview/Goals
+## Lab Overview and Goals
+
+This lab covers a variety of topics related to how computers "work." This lab is designed to help you gain an understanding of how the basic logical and mathematical operations underlying computation are performed mechanically. We will also use a simulation of CPU architecture to learn more about how an instruction is processed along the CPU data path cycle and how values from memory are incorporated into CPU instructions. We are doing this to gain more experience with understanding a computer’s mechanical operations at a higher level of abstraction. Finally, this lab covers reading and writing basic assembly language, to help us see the 0s and 1s underneath higher level programming and apply them to basic algorithms.
 
 ## Acknowledgements
 
-# ToC
+The author consulted Chapter 5, "Computing Components" from Nell Dale and John Lewis' *[Computer Science Illuminated, Seventh Edition](https://www.jblearning.com/catalog/productdetails/9781284155617)* textbook (Jones & Barlett Learning, 2020; ISBN: 9781284155617) when writing this lab.
 
-# Lecture/Live Coding
+Sections of this lab are based on the "Data path & memory" lab:
+- Created: Jerod Weinman, 16 March 2009
+- Modified: Jerod Weinman, 20 April 2011
+- Modified: Jerod Weinman, 4 April 2014
+- Portions adapted from Dave Reed, “A Balanced Introduction to Computer Science,” Exercises 14.1-14.6.
 
-# Overview
+Sections of this lab are based on the "Machine language" lab:
+- Created: Jerod Weinman, March 16, 2009
+- Revised: Janet Davis, April 27, 2012
+- Revised: Janet Davis, March 12, 2013
+- Revised: Jerod Weinman, 4 April 2014
+- Adapted from Dave Reed, “A Balanced Introduction to Computer Science,” Exercises 14.9, 14.10, and 14.13. 
+
+This lab's lecture segments were adapted from the following PBS *[Crash Course Computer Science](https://www.pbs.org/show/crash-course-computer-science/)* episodes:
+- "[How Computers Calculate - the ALU](https://www.pbs.org/video/how-computers-calculate-the-alu-crash-course-computer-sci-sm5zov/)"
+- "[Registers & RAM](https://www.pbs.org/video/registers-and-ram-crash-course-computer-science-6-lddkcd/)"
+- "[The Central Processing Unit (CPU)](https://www.pbs.org/video/the-central-processing-unit-cpu-crash-course-computer-sci-v5aynn/)"
+- "[Instructions & Programs](https://www.pbs.org/video/instructions-programs-crash-course-computer-science-8-ai4emg/)"
+
+# Table of Contents
+- [Lecture & Live Coding](#lecture--live-coding)
+- [Lab Notebook Template](#lab-notebook-template)
+- [Von Neumann Architecture](#von-neumann-architecture)
+- [ALU & Memory](#alu--memory)
+- [CPU & the Fetch-Execute Cycle](#cpu--the-fetch-execute-cycle)
+- [Assembly Language](#assembly-language)
+- [Putting It All Together](#putting-it-all-together)
+- [Lab Notebook Questions](#lab-notebook-questions)
+
+## Lecture & Live Coding
+
+Throughout this lab, you will see a Panopto icon at the start of select sections.
+
+This icon indicates there is lecture/live coding asynchronous content that accompanies this section of the lab. 
+
+You can click the link in the figure caption to access these materials (ND users only).
+
+Example:
+ 
+<table>
+ <tr><td>
+<img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
+<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=d55a3a86-9e99-4008-9e4f-ae510174ce65">Lecture/live coding playlist</a></td>
+  </tr>
+  </table>
+
+## Lab Notebook Template
+
+[Link to lab notebook template](https://docs.google.com/document/d/1OvM0j6faXkaJAFmrTuKDjBB0aXdPyu3lqzdL37iIEGw/copy) (ND users, Google Doc)
+
+# Von Neumann Architecture
 
 LAPTOP SPEC COMPARISON IMAGE
 
@@ -52,9 +102,6 @@ ALU DIAGRAM
 **Arithmetic Logic Unit**
 - "An arithmetic logic unit (ALU) is a combinational digital electronic circuit that performs arithmetic and bitwise operations on integer binary numbers" ([Wikipedia](https://en.wikipedia.org/wiki/Arithmetic_logic_unit))
 
-REGISTER DIAGRAM
-<p align="center"><img src="https://github.com/kwaldenphd/bits-bytes/blob/main/images/Image_2.png?raw=true" width="500"></p>
-
 **Memory**
 - "In computing, memory refers to a device that is used to store information for immediate use in a computer or related computer hardware device" ([Wikipedia](https://en.wikipedia.org/wiki/Computer_memory))
 
@@ -83,7 +130,61 @@ RAM vs persistant memory
 
 ## Application
 
-DATA PATH SIMULATOR
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_1.png?raw=true"></p>
+
+Open the [Knob & Switch Datapath 1 Simulator](http://www.dave-reed.com/book/Chapter14/datapath/datapath.html) in a new browser window. This simple CPU contains four registers, but no control unit. You will be the control unit that directs which registers are operated on and which operations are done.
+
+Take a look at the top box that says `Register Bank.` At the right are two command knobs, `A Bus Address` and `B Bus Address.` These knobs specify which registers should be read as inputs to the ALU. You can click on each knob to turn it.
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_2.png?raw=true"></p>
+
+Set the `A bus` address to `R2` and the `B bus` address to `R1`. 
+
+<blockquote>Q1: Based on these bus settings, what values do you expect to show along the A and B bus?</blockquote>
+
+The register values are the textboxes with a green background. Currently, all the register default values are zero.  
+
+Set the value of `R1` to 42. Set the value of `R2` to 31. Check that `Animation Speed` is set on `Medium` and `Number Base` is set to `+-10.`
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_2.png?raw=true"></p>
+
+<blockquote>Q2: What happens when you click <code>Execute</code>? Are the <code>A bus</code> and <code>B bus</code> values what you expected? Why or why not?</blockquote>
+  
+The previous set of steps sent data to the ALU. Next we will tell the ALU what to do with the data. 
+
+In the bottom right of the simulator is yet another knob entitled `ALU Operation.` This knob instructs the ALU what operation to perform on the data it has received. 
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_4.png?raw=true"></p>
+
+Click the knob so that it points to the instruction `A-B.`
+
+The box to the left of the ALU knob is a diagnostic. It reports information based on the input provided to the ALU. Right now, `zero` has a check next to it because the default result is zero. You should see this reflected in the `C` textbox.
+
+<blockquote>Q3: What do you think will happen to the boxes when the result is less than zero?</blockquote>
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_4.png?raw=true"></p>
+
+Check that the simulator's current settings to make sure it is set to run `A-B`, where `A` is `R2` and `B` is `R1`.
+
+<blockquote>Q4: With the values of <code>R1=42</code> and <code>R2=31</code> that you input earlier, what do you expect the result <code>C</code> to be?</blockquote>
+
+Run the simulator to start a cycle with these settings. Halt the simulator when the result flashes in `C.` 
+
+<blockquote>Q5: Is the result what you expected? Why or why not? What happened to the diagnostic boxes?</blockquote>
+
+Now we want the ALU to do something with the calculated result. 
+
+The calculated result gets sent along the `C bus` back into the `register bank`. The `C Bus Address` knob in the top-left of the simulator tells the CPU which register it should use to store the calculated result. 
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_5.png?raw=true"></p>
+
+Click the knob to store the result in `R3`. Run a simulation of a full cycle to subtract `R1` from `R2` and store the result in `R3`.
+
+<blockquote>Q6: Describe what happened and the output in the previous step.</blockquote>
+
+<blockquote>Q7: What settings (e.g., knob positions) would cause the value stored in <code>R3</code> to be doubled?</blockquote>
+
+<blockquote>Q8: Set <code>R3</code> to 12 and test your answer to Q7? Did your hypothesis hold true? Why or why not?</blockquote>
 
 # CPU & the Fetch-Execute Cycle
 
@@ -143,15 +244,72 @@ Fetch execute cycle- what isn't part of that
 
 ## Application
 
-SECOND SIMULATOR WITH MAIN MEMORY
+So far, we have only been using data from a limited number of CPU registers. Actual computers have much more storage in their main memory. Data gets from memory into the registers through additional communication channels.
 
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_6.png?raw=true"></p>
+
+Open the [Knob & Switch Datapath and Memory Simulator](http://www.dave-reed.com/book/Chapter14/dpandmem.html) in a new browser window. 
+
+Two notable components here are the memory and bus switches. The memory values on the left of the simulator represent `RAM`. The button next to each memory location indicates which location will be read (`R`) from or written to (`W`) in one cycle of the machine.
+
+The bus connections from the ALU to the register bank now have switches on them. You can click these connections to toggle (open and close) the switches. Note that an open switch looks like an open door. No signal will flow across an open switch. A closed switch allows the signal to flow across it. 
+
+We also have two new connections along the `C bus`. The `C bus` is the pathway into the register bank. The connection pointing up from the `Main Memory Bus` into `C bus` allows us put memory values into registers, rather than ALU results. 
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_7.png?raw=true"></p>
+
+Open the circuit from the ALU into the `C bus`, so that there is no longer a connection.
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_8.png?raw=true"></p>
+
+Click to close the connection from the `Main Memory bus` to the `C bus`. The connection from the `C bus` to the memory bus should be open.
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_9.png?raw=true"></p>
+
+Put the value `42` into memory location `0`, and select it as the `RW` location.
+
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_10.png?raw=true"></p>
+
+Set the connection switch along the `C Bus` into the register bank so that it is closed. Select the `C Bus address` to be `R0`.
+
+<blockquote>Q9: Based on these settings, what do you think will happen when you click <code>Execute</code>?</blockquote>
+  
+<blockquote>Q10: Test your prediction using the simulator. Did your hypothesis hold true? Why or why not?</blockquote>
+
+<blockquote>Q11: What settings (bus addresses, ALU operation, switches, and memory RW) would result in R0 minus R3 being stored in memory location 4?</blockquote>
+
+<blockquote>Q12: Set <code>R0 = 23</code> and <code>R3 = 16</code> to test your Q11 answer. Did your hypothesis hold true? Why or why not?</blockquote>
 
 # Assembly Language
 
-
-
+<table>
+ <tr><td>
+<img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
+<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bae0c40a-1e2d-43bc-b27c-aef40109b060">Assembly Language</a></td>
+  </tr>
+  </table>
 
 ## Key Terms
+
+INSTRUCTION FORMAT DIAGRAM
+
+**Assembly Language**
+- "In computer programming, assembly language...is any low-level programming language with a very strong correspondence between the instructions in the language and the architecture's machine code instructions. Assembly language usually has one statement per machine instruction (1:1)...Because each assembly depends on the machine code instructions, each assembly language is specific to a paticular computer architecture" ([Wikipedia](https://en.wikipedia.org/wiki/Assembly_language))
+
+**Assembler**
+- "An assembler program creates object code by translating combinations of mnemonics and syntax for operations and addressing modes into their numerical equivalents. This representation typically includes an operation code ('opcode') as well as other control bits and data. The assembler also calculates constant expressions and resolves symbolic names for memory locations and other entities" ([Wikipedia](https://en.wikipedia.org/wiki/Assembly_language#Assembler))
+
+**Instruction Specifier**
+- Typically the first byte of an instruction. If present, it indicates which operation is being performed. Also tells the computer how to process the operand.
+
+**Operand Specifier**
+- Typically the second and third bytes in an instruction. If present, it can hold the operand or its address (location).
+
+**Operation Codes (opcodes)**
+- Typically 4-8 bits. It indicates the instruction specifier format and can include a register specifier.
+
+**Addressing Mode**
+- Typically 3 bits. It indicates how to interpret the operand specifier.
 
 <table>
  <tr><td>
@@ -160,11 +318,67 @@ SECOND SIMULATOR WITH MAIN MEMORY
   </tr>
   </table>
 
+what type of info is in an instruction
+
+Relationship of machine/assembly language
+
+What kinds of asks can assembly language "do"
 
 ## Application
 
-THIRD SIMULATOR
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_11.png?raw=true"></p>
 
+Open the [Knob & Switch Machine Language Instruction Set](http://www.dave-reed.com/book/Chapter14/instructions.html) in a new browser window. Open the [Knob & Switch Machine Simulator](http://www.dave-reed.com/book/Chapter14/machine.html) in a second new browser window. Keep both Knob & Switch windows open in this section of the lab.
+
+We're going to use the simulator and instruction set to run the program outlined in the "Assembly Language" lecture segment.
+
+This simulator has its own labeling system, and assembly language is machine-specific, so the instruction set will be needed.
+
+The core tasks for this program:
+- Read memory location `14` into `R0` (the first register)
+- Read memory location `15` into `R1` (the second register)
+- Add the two register values and store in `R1` (second register)
+- Store the arithmetic operation output in memory location `13`
+
+<blockquote>Q13: How would we represent each of these tasks using this simulator's assembly code? HINT: Think through the underlying program logic and connect to examples in the instruction set.</blockquote>
+
+IMAGE
+
+Let's put each of these instructions in a main memory location.
+- Main memory location #0: Read memory location `14` into `R0` (the first register)
+- Main memory location #1: Read memory location `15` into `R1` (the second register)
+- Main memory location #2: Add the two register values and store in `R1` (second register)
+- Main memory location #3: Store the arithmetic operation output in memory location `13`
+
+IMAGE
+
+Since our first two instructions involve reading values from memory, we'll need to add values to main memory locations `14` and `15`. 
+- Value for `14`: `3`
+- Value for `15`: `14`
+
+We don't need to make any other changes to the simulator (circuits, knobs, etc).
+
+<blockquote>Q14: Based on these settings, what do you think will happen when you run this program? Use the fetch-execute cycle framework to describe what will happen in each iteration of the program.</blockquote>
+
+Fetch-execute cycle:
+- Fetch instruction
+- Decode instruction
+- Get data (if needed)
+- Execute instruction
+
+<blockquote>Q15: When will this program stop or end?</blockquote>
+
+<blockquote>Q16: Test your prediction using the simulator. What parts of your hypothesis held true? What parts did not?</blockquote> 
+
+<blockquote>Q17: What can you tell about how the simulator's control unit is interpeting the assembly language instructions? NOTE: You do not need to map out the exact assembly-machine language translation. Describe in general how assembly language instructions are handled by the control unit.</blockquote>
+
+Think about how many discrete instructions are part of this program. Since there are only four instructions, the simulator should only need 4 cycles to finish the program.
+
+But you may have noticed the program is still running and the `PC` (program counter) value continues to increase.
+
+<blockquote>Q18: What settings or values would we need to modify for the program to stop after executing the last instruction?</blockquote>
+
+<blockquote>Q19: Test your prediction using the simulator. What parts of your hypothesis held true? What parts did not?</blockquote> 
 
 # Putting It All Together
 
@@ -176,9 +390,13 @@ https://www.cnet.com/tech/services-and-software/microsofts-strict-windows-11-dev
 
 ## Final Questions
 
-QX: Back to original laptop specs. What do you understand better/more deeply
+Q20: Back to original laptop specs. What do you understand better/more deeply
 
-QX: What are specs for your own computer, what do they mean
+Q21: What are specs for your own computer, what do they mean
 
 Mac: https://support.apple.com/guide/system-information/get-system-information-syspr35536/mac
 PC: https://www.lifewire.com/how-to-get-your-computer-specs-3506998
+
+# Lab Notebook Questions
+
+
