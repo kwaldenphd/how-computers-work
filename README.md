@@ -137,13 +137,13 @@ RAM vs persistant memory
 
 ## Application
 
-<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_1.png?raw=true"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_1.png?raw=true" width="500"></p>
 
 Open the [Knob & Switch Datapath 1 Simulator](http://www.dave-reed.com/book/Chapter14/datapath/datapath.html) in a new browser window. This simple CPU contains four registers, but no control unit. You will be the control unit that directs which registers are operated on and which operations are done.
 
 Take a look at the top box that says `Register Bank.` At the right are two command knobs, `A Bus Address` and `B Bus Address.` These knobs specify which registers should be read as inputs to the ALU. You can click on each knob to turn it.
 
-<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_2.png?raw=true"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_2.png?raw=true" width="500"></p>
 
 Set the `A bus` address to `R2` and the `B bus` address to `R1`. 
 
@@ -153,7 +153,7 @@ The register values are the textboxes with a green background. Currently, all th
 
 Set the value of `R1` to 42. Set the value of `R2` to 31. Check that `Animation Speed` is set on `Medium` and `Number Base` is set to `+-10.`
 
-<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_2.png?raw=true"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_2.png?raw=true" width="500"></p>
 
 <blockquote>Q2: What happens when you click <code>Execute</code>? Are the <code>A bus</code> and <code>B bus</code> values what you expected? Why or why not?</blockquote>
   
@@ -161,7 +161,7 @@ The previous set of steps sent data to the ALU. Next we will tell the ALU what t
 
 In the bottom right of the simulator is yet another knob entitled `ALU Operation.` This knob instructs the ALU what operation to perform on the data it has received. 
 
-<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_4.png?raw=true"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_4.png?raw=true" width="500"></p>
 
 Click the knob so that it points to the instruction `A-B.`
 
@@ -169,7 +169,7 @@ The box to the left of the ALU knob is a diagnostic. It reports information base
 
 <blockquote>Q3: What do you think will happen to the boxes when the result is less than zero?</blockquote>
 
-<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_4.png?raw=true"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_4.png?raw=true" width="500"></p>
 
 Check that the simulator's current settings to make sure it is set to run `A-B`, where `A` is `R2` and `B` is `R1`.
 
@@ -183,7 +183,7 @@ Now we want the ALU to do something with the calculated result.
 
 The calculated result gets sent along the `C bus` back into the `register bank`. The `C Bus Address` knob in the top-left of the simulator tells the CPU which register it should use to store the calculated result. 
 
-<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_5.png?raw=true"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_5.png?raw=true" width="500"></p>
 
 Click the knob to store the result in `R3`. Run a simulation of a full cycle to subtract `R1` from `R2` and store the result in `R3`.
 
@@ -251,7 +251,7 @@ Fetch execute cycle- what isn't part of that
 
 So far, we have only been using data from a limited number of CPU registers. Actual computers have much more storage in their main memory. Data gets from memory into the registers through additional communication channels.
 
-<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_6.png?raw=true"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_6.png?raw=true" width="500"></p>
 
 Open the [Knob & Switch Datapath and Memory Simulator](http://www.dave-reed.com/book/Chapter14/dpandmem.html) in a new browser window. 
 
@@ -261,19 +261,19 @@ The bus connections from the ALU to the register bank now have switches on them.
 
 We also have two new connections along the `C bus`. The `C bus` is the pathway into the register bank. The connection pointing up from the `Main Memory Bus` into `C bus` allows us put memory values into registers, rather than ALU results. 
 
-<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_7.png?raw=true"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_7.png?raw=true" width="500"></p>
 
 Open the circuit from the ALU into the `C bus`, so that there is no longer a connection.
 
-<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_8.png?raw=true"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_8.png?raw=true" width="500"></p>
 
 Click to close the connection from the `Main Memory bus` to the `C bus`. The connection from the `C bus` to the memory bus should be open.
 
-<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_9.png?raw=true"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_9.png?raw=true" width="500"></p>
 
 Put the value `42` into memory location `0`, and select it as the `RW` location.
 
-<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_10.png?raw=true"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_10.png?raw=true" width="500"></p>
 
 Set the connection switch along the `C Bus` into the register bank so that it is closed. Select the `C Bus address` to be `R0`.
 
@@ -331,7 +331,7 @@ What kinds of asks can assembly language "do"
 
 ## Application
 
-<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_11.png?raw=true"></p>
+<p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_11.png?raw=true" width="500"></p>
 
 Open the [Knob & Switch Machine Language Instruction Set](http://www.dave-reed.com/book/Chapter14/instructions.html) in a new browser window. Open the [Knob & Switch Machine Simulator](http://www.dave-reed.com/book/Chapter14/machine.html) in a second new browser window. Keep both Knob & Switch windows open in this section of the lab.
 
