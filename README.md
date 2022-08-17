@@ -62,9 +62,7 @@ Example:
 
 # Von Neumann Architecture
 
-LAPTOP SPEC COMPARISON IMAGE
-
-<p align="center"><img src="https://github.com/kwaldenphd/bits-bytes/blob/main/images/Image_2.png?raw=true" width="500"></p>
+<p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Laptop_Spec_Comparison.png?raw=true" width="750"></p>
 
 If you've ever purchased a laptop, you may have encountered an overwhelming number of details about different aspects of the product. This information is often referred to as "specifications" (or "specs"). The next few labs will focus on breaking down some of these components to better understand the hardware and software building blocks that make up a computer.
 
@@ -74,9 +72,7 @@ To learn more about von Neumann architecture:
 - [Wikipedia](https://en.wikipedia.org/wiki/Von_Neumann_architecture)
 - John von Neumann, "[First Draft of a Report on the EDVAC](http://web.mit.edu/STS.035/www/PDFs/edvac.pdf)", *IEEE Annals of the History of Computing* 15:4 (1993): 29-43. Originally published in 1945.
 
-VON NEUMANN IMAGE
-
-<p align="center"><img src="https://github.com/kwaldenphd/bits-bytes/blob/main/images/Image_2.png?raw=true" width="500"></p>
+<p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Von_Neumann_Architecture.png?raw=true" width="500"></p>
 
 The core components of the von Neumann architecture:
 - Input and output
@@ -96,8 +92,7 @@ The core components of the von Neumann architecture:
 
 ## Key Terms
 
-ALU DIAGRAM
-<p align="center"><img src="https://github.com/kwaldenphd/bits-bytes/blob/main/images/Image_2.png?raw=true" width="500"></p>
+<p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/ALU_Diagram.gif?raw=true" width="500"></p>
 
 **Arithmetic Logic Unit**
 - "An arithmetic logic unit (ALU) is a combinational digital electronic circuit that performs arithmetic and bitwise operations on integer binary numbers" ([Wikipedia](https://en.wikipedia.org/wiki/Arithmetic_logic_unit))
@@ -202,8 +197,8 @@ Click the knob to store the result in `R3`. Run a simulation of a full cycle to 
 - Input device examples: keyboard, mouse, network card, etc.
 - Output device examples: monitor, display, printer, etc.
 
-CPU DIAGRAM
-<p align="center"><img src="https://github.com/kwaldenphd/bits-bytes/blob/main/images/Image_2.png?raw=true" width="500"></p>
+<p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Von_Neumann_Architecture.png?raw=true" width="500"></p>
+<p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Von_Neumann_Flow.png?raw=true" width="500"></p>
 
 **Processor (or processing unit)**
 - "In computing, a processor or processing unit is an electronic circuit which performs operations on some external data source, usually memory or some other data stream. The term is frequently used to refer to the central processor (central processing unit)" ([Wikipedia](https://en.wikipedia.org/wiki/Processor_(computing)))
@@ -217,8 +212,7 @@ CPU DIAGRAM
 **Instruction Register (IR)**
 - Register with the instruction that is currently being executed
 
-FETCH-EXECUTE CYCLE DIAGRAM
-<p align="center"><img src="https://github.com/kwaldenphd/bits-bytes/blob/main/images/Image_2.png?raw=true" width="500"></p>
+<p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fetch_Execute_Cycle.png?raw=true" width="500"></p>
 
 **Fetch-Execute Cycle**
 - Computer processing cycle that includes four main steps:
@@ -291,7 +285,7 @@ Set the connection switch along the `C Bus` into the register bank so that it is
 
 ## Key Terms
 
-INSTRUCTION FORMAT DIAGRAM
+<p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Pep9_Instruction_Format.png?raw=true" width="500"></p>
 
 **Assembly Language**
 - "In computer programming, assembly language...is any low-level programming language with a very strong correspondence between the instructions in the language and the architecture's machine code instructions. Assembly language usually has one statement per machine instruction (1:1)...Because each assembly depends on the machine code instructions, each assembly language is specific to a paticular computer architecture" ([Wikipedia](https://en.wikipedia.org/wiki/Assembly_language))
@@ -342,15 +336,13 @@ The core tasks for this program:
 
 <blockquote>Q13: How would we represent each of these tasks using this simulator's assembly code? HINT: Think through the underlying program logic and connect to examples in the instruction set.</blockquote>
 
-IMAGE
+<p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Main_Memory.png?raw=true" width="500"></p>
 
 Let's put each of these instructions in a main memory location.
 - Main memory location #0: Read memory location `14` into `R0` (the first register)
 - Main memory location #1: Read memory location `15` into `R1` (the second register)
 - Main memory location #2: Add the two register values and store in `R1` (second register)
 - Main memory location #3: Store the arithmetic operation output in memory location `13`
-
-IMAGE
 
 Since our first two instructions involve reading values from memory, we'll need to add values to main memory locations `14` and `15`. 
 - Value for `14`: `3`
@@ -369,6 +361,8 @@ Fetch-execute cycle:
 <blockquote>Q15: When will this program stop or end?</blockquote>
 
 <blockquote>Q16: Test your prediction using the simulator. What parts of your hypothesis held true? What parts did not?</blockquote> 
+
+<p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Control_Unit.png?raw=true" width="500"></p>
 
 <blockquote>Q17: What can you tell about how the simulator's control unit is interpeting the assembly language instructions? NOTE: You do not need to map out the exact assembly-machine language translation. Describe in general how assembly language instructions are handled by the control unit.</blockquote>
 
