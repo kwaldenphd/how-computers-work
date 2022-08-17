@@ -197,7 +197,6 @@ Click the knob to store the result in `R3`. Run a simulation of a full cycle to 
 - Input device examples: keyboard, mouse, network card, etc.
 - Output device examples: monitor, display, printer, etc.
 
-<p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Von_Neumann_Architecture.png?raw=true" width="500"></p>
 <p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Von_Neumann_Flow.png?raw=true" width="500"></p>
 
 **Processor (or processing unit)**
