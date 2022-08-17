@@ -6,6 +6,13 @@
 
 This lab covers a variety of topics related to how computers "work." This lab is designed to help you gain an understanding of how the basic logical and mathematical operations underlying computation are performed mechanically. We will also use a simulation of CPU architecture to learn more about how an instruction is processed along the CPU data path cycle and how values from memory are incorporated into CPU instructions. We are doing this to gain more experience with understanding a computer’s mechanical operations at a higher level of abstraction. Finally, this lab covers reading and writing basic assembly language, to help us see the 0s and 1s underneath higher level programming and apply them to basic algorithms.
 
+<table>
+ <tr><td>
+<img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
+<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=72439895-e9e2-47bc-b8b2-aef4014d339f">Lecture/live coding playlist</a></td>
+  </tr>
+  </table>
+
 ## Acknowledgements
 
 The author consulted Chapter 5, "Computing Components" from Nell Dale and John Lewis' *[Computer Science Illuminated, Seventh Edition](https://www.jblearning.com/catalog/productdetails/9781284155617)* textbook (Jones & Barlett Learning, 2020; ISBN: 9781284155617) when writing this lab.
@@ -52,13 +59,18 @@ Example:
 <table>
  <tr><td>
 <img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
-<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=d55a3a86-9e99-4008-9e4f-ae510174ce65">Lecture/live coding playlist</a></td>
+<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=72439895-e9e2-47bc-b8b2-aef4014d339f">Lecture/live coding playlist</a></td>
   </tr>
   </table>
 
 ## Lab Notebook Template
 
-[Link to lab notebook template](https://docs.google.com/document/d/1OvM0j6faXkaJAFmrTuKDjBB0aXdPyu3lqzdL37iIEGw/copy) (ND users, Google Doc)
+[Link to lab notebook template](https://docs.google.com/document/d/1SpHmyZkN7b5wmtY0n8y5jI6JxBanZXg8UVZOoNPIv_o/copy) (ND users, Google Doc)
+- Simulator screenshots are HIGHLY recommended.
+  * Windows ([Snipping Tool](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b) for folks running older versions of Windows; [Snip & Sketch](https://www.lifewire.com/snip-and-sketch-windows-10-4774799) for folks running updated versions)
+  * [Mac](https://support.apple.com/en-us/HT201361)
+  * [Google Chromebook](https://support.google.com/chromebook/answer/10474268?hl=en)
+- [Tutorial for adding images/tables/drawings to a Google Doc](https://www.techrepublic.com/article/how-to-add-images-tables-and-drawings-to-a-google-doc-file/)
 
 # Von Neumann Architecture
 
@@ -375,21 +387,90 @@ But you may have noticed the program is still running and the `PC` (program coun
 
 # Putting It All Together
 
-Windows 11 processor requirements
+"All computers have a CPU that can be divided into two pieces. The first is the datapath, which is a network of storage units (registers) and arithmetic and logic units...connected by buses...where the timing is controlled by clocks." (Linda Null and Julia Lobur, 2006. *[The Essentials of Computer Organization and Architecture](https://www.oreilly.com/library/view/the-essentials-of/9781284033144/)*, pp. 2016.)
 
-https://blogs.windows.com/windows-insider/2021/08/27/update-on-windows-11-minimum-system-requirements-and-the-pc-health-check-app/
+Let's go back to the laptop specs we looked at in the beginning of this lab.
 
-https://www.cnet.com/tech/services-and-software/microsofts-strict-windows-11-device-requirements-have-one-exception-what-to-know/
+<p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Laptop_Spec_Comparison.png?raw=true" width="750"></p>
 
-## Final Questions
+Hopefully we're gaining familiarity with some of these terms and concepts.
 
-Q20: Back to original laptop specs. What do you understand better/more deeply
+Let's find the hardware specs for your personal computer (or a school computer you can access):
+- [Mac users](https://support.apple.com/guide/system-information/get-system-information-syspr35536/mac)
+- [PC users](https://www.lifewire.com/how-to-get-your-computer-specs-3506998)
+- [Chromebook](https://www.lifewire.com/how-to-check-chromebook-specs-hardware-4782658)
+- [Linux](https://www.makeuseof.com/check-system-details-and-hardware-information-on-linux/)
 
-Q21: What are specs for your own computer, what do they mean
+<blockquote>Q20: How would you describe some of these specifications in your own words, using terms and concepts covered in this lab?</blockquote>
 
-Mac: https://support.apple.com/guide/system-information/get-system-information-syspr35536/mac
-PC: https://www.lifewire.com/how-to-get-your-computer-specs-3506998
+You may be wondering if these specifications matter for your regular computer use. That's a fair question. 
+
+Your computer's input devices control what types of devices you can connect to the computer, from the number and type of USB ports to HDMI connections and other adapters.
+
+Your computer's output devices, especially the display, control screen size, resolution, and other aspects of the visual interface.
+
+Sometimes, operating system updates can run into compatibility issues with the underlying computer hardware. For example, the hardware in Professor Walden's second-generation iPad stopped supporting iOS updates in 2016, meaning the tablet isn't able to run current versions of most apps or programs. Mac operating system updates often have specific hardware requirements and [can only be rolled out on select models](https://support.apple.com/en-us/HT212551). The recent Windows 11 roll out has very specific minimum system requirements.
+
+Learn more about the Windows 11 rollout:
+- [Windows](https://blogs.windows.com/windows-insider/2021/08/27/update-on-windows-11-minimum-system-requirements-and-the-pc-health-check-app)
+- [CNet](https://www.cnet.com/tech/services-and-software/microsofts-strict-windows-11-device-requirements-have-one-exception-what-to-know)
 
 # Lab Notebook Questions
 
+[Link to lab notebook template](https://docs.google.com/document/d/1SpHmyZkN7b5wmtY0n8y5jI6JxBanZXg8UVZOoNPIv_o/copy) (ND users, Google Doc)
+- Simulator screenshots are HIGHLY recommended.
+  * Windows ([Snipping Tool](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b) for folks running older versions of Windows; [Snip & Sketch](https://www.lifewire.com/snip-and-sketch-windows-10-4774799) for folks running updated versions)
+  * [Mac](https://support.apple.com/en-us/HT201361)
+  * [Google Chromebook](https://support.google.com/chromebook/answer/10474268?hl=en)
+- [Tutorial for adding images/tables/drawings to a Google Doc](https://www.techrepublic.com/article/how-to-add-images-tables-and-drawings-to-a-google-doc-file/)
 
+Q1: Based on these bus settings, what values do you expect to show along the A and B bus?
+
+Q2: What happens when you click <code>Execute</code>? Are the <code>A bus</code> and <code>B bus</code> values what you expected? Why or why not?
+  
+Q3: What do you think will happen to the boxes when the result is less than zero?
+
+Q4: With the values of <code>R1=42</code> and <code>R2=31</code> that you input earlier, what do you expect the result <code>C</code> to be?
+
+Q5: Is the result what you expected? Why or why not? What happened to the diagnostic boxes?
+
+Q6: Describe what happened and the output in the previous step.
+
+Q7: What settings (e.g., knob positions) would cause the value stored in <code>R3</code> to be doubled?
+
+Q8: Set <code>R3</code> to 12 and test your answer to Q7? Did your hypothesis hold true? Why or why not?
+
+Q9: Based on these settings, what do you think will happen when you click <code>Execute</code>?
+  
+Q10: Test your prediction using the simulator. Did your hypothesis hold true? Why or why not?
+
+Q11: What settings (bus addresses, ALU operation, switches, and memory RW) would result in R0 minus R3 being stored in memory location 4?
+
+Q12: Set <code>R0 = 23</code> and <code>R3 = 16</code> to test your Q11 answer. Did your hypothesis hold true? Why or why not?
+
+Q13: How would we represent each of these tasks using this simulator's assembly code? HINT: Think through the underlying program logic and connect to examples in the instruction set.
+
+Q14: Based on these settings, what do you think will happen when you run this program? Use the fetch-execute cycle framework to describe what will happen in each iteration of the program.
+
+Fetch-execute cycle:
+- Fetch instruction
+- Decode instruction
+- Get data (if needed)
+- Execute instruction
+
+Q15: When will this program stop or end?
+
+Q16: Test your prediction using the simulator. What parts of your hypothesis held true? What parts did not?
+
+Q17: What can you tell about how the simulator's control unit is interpeting the assembly language instructions? NOTE: You do not need to map out the exact assembly-machine language translation. Describe in general how assembly language instructions are handled by the control unit.
+
+Q18: What settings or values would we need to modify for the program to stop after executing the last instruction?
+
+Q19: Test your prediction using the simulator. What parts of your hypothesis held true? What parts did not?
+
+Q20: Find the hardware specs for your personal computer (or a school computer you can access). How would you describe some of these specifications in your own words, using terms and concepts covered in this lab?
+
+- [Mac users](https://support.apple.com/guide/system-information/get-system-information-syspr35536/mac)
+- [PC users](https://www.lifewire.com/how-to-get-your-computer-specs-3506998)
+- [Chromebook](https://www.lifewire.com/how-to-check-chromebook-specs-hardware-4782658)
+- [Linux](https://www.makeuseof.com/check-system-details-and-hardware-information-on-linux/)
