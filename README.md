@@ -122,6 +122,8 @@ The core components of the von Neumann architecture:
 **Persistant Memory**
 - Physical storage (magnetic disks, solid state disks, magnetic tape, etc) that retains information even when the device is powered off
 
+## Comprehension Check
+
 <table>
  <tr><td>
 <img src="https://www.freeiconspng.com/thumbs/survey-icon/survey-icon-12.png" alt="Clipboard icon" width="50"/></td>
@@ -232,6 +234,8 @@ Click the knob to store the result in `R3`. Run a simulation of a full cycle to 
   * Get data (if needed)
   * Execute instruction
 
+## Comprehension Check
+
 <table>
  <tr><td>
 <img src="https://www.freeiconspng.com/thumbs/survey-icon/survey-icon-12.png" alt="Clipboard icon" width="50"/></td>
@@ -315,6 +319,8 @@ Set the connection switch along the `C Bus` into the register bank so that it is
 
 **Addressing Mode**
 - Typically 3 bits. It indicates how to interpret the operand specifier.
+
+## Comprehension Check
 
 <table>
  <tr><td>
