@@ -63,6 +63,10 @@ Example:
   </tr>
   </table>
 
+## Key Terms
+
+[Click here](https://github.com/kwaldenphd/how-computers-work/blob/main/key-terms.md) for a full list of key terms and definitions for this lab.
+
 ## Lab Notebook Template
 
 [Link to lab notebook template](https://docs.google.com/document/d/1SpHmyZkN7b5wmtY0n8y5jI6JxBanZXg8UVZOoNPIv_o/copy) (ND users, Google Doc)
@@ -121,6 +125,8 @@ The core components of the von Neumann architecture:
 
 **Persistant Memory**
 - Physical storage (magnetic disks, solid state disks, magnetic tape, etc) that retains information even when the device is powered off
+
+[Click here](https://github.com/kwaldenphd/how-computers-work/blob/main/key-terms.md) for a full list of key terms and definitions for this lab.
 
 ## Comprehension Check
 
@@ -234,6 +240,8 @@ Click the knob to store the result in `R3`. Run a simulation of a full cycle to 
   * Get data (if needed)
   * Execute instruction
 
+[Click here](https://github.com/kwaldenphd/how-computers-work/blob/main/key-terms.md) for a full list of key terms and definitions for this lab.
+
 ## Comprehension Check
 
 <table>
@@ -319,6 +327,8 @@ Set the connection switch along the `C Bus` into the register bank so that it is
 
 **Addressing Mode**
 - Typically 3 bits. It indicates how to interpret the operand specifier.
+
+[Click here](https://github.com/kwaldenphd/how-computers-work/blob/main/key-terms.md) for a full list of key terms and definitions for this lab.
 
 ## Comprehension Check
 
