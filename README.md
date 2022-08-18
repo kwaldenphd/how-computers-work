@@ -132,7 +132,7 @@ The core components of the von Neumann architecture:
 
 <table>
  <tr><td>
-<img src="https://www.freeiconspng.com/thumbs/survey-icon/survey-icon-12.png" alt="Clipboard icon" width="50"/></td>
+<img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
   <td><a href="https://docs.google.com/forms/d/e/1FAIpQLScQoRbyDYB2Cisg_AmfMhUqj8qXn0ZbeuembRhQpOnbb64I2g/viewform?usp=sf_link">ALU & Memory Comprehension Check</a></td>
   </tr>
   </table>
@@ -246,7 +246,7 @@ Click the knob to store the result in `R3`. Run a simulation of a full cycle to 
 
 <table>
  <tr><td>
-<img src="https://www.freeiconspng.com/thumbs/survey-icon/survey-icon-12.png" alt="Clipboard icon" width="50"/></td>
+<img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
   <td><a href="https://docs.google.com/forms/d/e/1FAIpQLScQoRbyDYB2Cisg_AmfMhUqj8qXn0ZbeuembRhQpOnbb64I2g/viewform?usp=sf_link">CPU & Fetch-Execute Comprehension Check</a></td>
   </tr>
   </table>
@@ -334,7 +334,7 @@ Set the connection switch along the `C Bus` into the register bank so that it is
 
 <table>
  <tr><td>
-<img src="https://www.freeiconspng.com/thumbs/survey-icon/survey-icon-12.png" alt="Clipboard icon" width="50"/></td>
+<img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
   <td><a href="https://docs.google.com/forms/d/e/1FAIpQLScQoRbyDYB2Cisg_AmfMhUqj8qXn0ZbeuembRhQpOnbb64I2g/viewform?usp=sf_link">Assembly Language Comprehension Check</a></td>
   </tr>
   </table>
