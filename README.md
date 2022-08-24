@@ -245,14 +245,6 @@ Click the knob to store the result in `R3`. Run a simulation of a full cycle to 
   </tr>
   </table>
 
-COMPREHENSION CHECK
-
-Which of following is NOT a core component of the CPU
-
-What are the core components of the CPU
-
-Fetch execute cycle- what isn't part of that
-
 ## Application
 
 So far, we have only been using data from a limited number of CPU registers. Actual computers have much more storage in their main memory. Data gets from memory into the registers through additional communication channels.
