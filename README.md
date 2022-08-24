@@ -133,7 +133,7 @@ The core components of the von Neumann architecture:
 <table>
  <tr><td>
 <img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
-  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLScQoRbyDYB2Cisg_AmfMhUqj8qXn0ZbeuembRhQpOnbb64I2g/viewform?usp=sf_link">ALU & Memory Comprehension Check</a></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSeQMbwN4rnIyAkuVVkGGOK2hQdvH1X6gzsjXO1ZvQi1pRJHnw/viewform?usp=sf_link">ALU & Memory Comprehension Check</a></td>
   </tr>
   </table>
 
@@ -247,7 +247,7 @@ Click the knob to store the result in `R3`. Run a simulation of a full cycle to 
 <table>
  <tr><td>
 <img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
-  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLScQoRbyDYB2Cisg_AmfMhUqj8qXn0ZbeuembRhQpOnbb64I2g/viewform?usp=sf_link">CPU & Fetch-Execute Comprehension Check</a></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSffdR1H3vNmMPIjRKvhaS1DkzysyDJ1h9vFjHDW_CGP_qmh5g/viewform?usp=sf_link">CPU & Fetch-Execute Comprehension Check</a></td>
   </tr>
   </table>
 
@@ -335,7 +335,7 @@ Set the connection switch along the `C Bus` into the register bank so that it is
 <table>
  <tr><td>
 <img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
-  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLScQoRbyDYB2Cisg_AmfMhUqj8qXn0ZbeuembRhQpOnbb64I2g/viewform?usp=sf_link">Assembly Language Comprehension Check</a></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSc1CvbF9ttUsh6vQhy3dlCIG3peps0y1jIlbgi7IrIPXIEe-A/viewform?usp=sf_link">Assembly Language Comprehension Check</a></td>
   </tr>
   </table>
 
