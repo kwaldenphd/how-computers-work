@@ -137,12 +137,6 @@ The core components of the von Neumann architecture:
   </tr>
   </table>
 
-COMPREHENSION CHECK
-
-Describe core components of the ALU
-
-RAM vs persistant memory
-
 ## Application
 
 <p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_1.png?raw=true" width="500"></p>
