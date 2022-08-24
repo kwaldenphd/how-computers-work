@@ -39,7 +39,7 @@
 **Memory**
 - "In computing, memory refers to a device that is used to store information for immediate use in a computer or related computer hardware device" ([Wikipedia](https://en.wikipedia.org/wiki/Computer_memory))
 
-**Persistant Memory**
+**Persistent Memory**
 - Physical storage (magnetic disks, solid state disks, magnetic tape, etc) that retains information even when the device is powered off
 
 **Processor (or processing unit)**
