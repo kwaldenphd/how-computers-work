@@ -123,7 +123,7 @@ The core components of the von Neumann architecture:
 - "Random-access memory (RAM) is a form of computer memory that can be read and changed in any order, typically used to store working data and machine code" ([Wikipedia](https://en.wikipedia.org/wiki/Random-access_memory))
 - RAM is controlled by the CPU and can include data and instructions
 
-**Persistant Memory**
+**Persistent Memory**
 - Physical storage (magnetic disks, solid state disks, magnetic tape, etc) that retains information even when the device is powered off
 
 [Click here](https://github.com/kwaldenphd/how-computers-work/blob/main/key-terms.md) for a full list of key terms and definitions for this lab.
