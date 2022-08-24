@@ -325,12 +325,6 @@ Set the connection switch along the `C Bus` into the register bank so that it is
   </tr>
   </table>
 
-what type of info is in an instruction
-
-Relationship of machine/assembly language
-
-What kinds of asks can assembly language "do"
-
 ## Application
 
 <p align="center"><img align="center" src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Fig_11.png?raw=true" width="500"></p>
