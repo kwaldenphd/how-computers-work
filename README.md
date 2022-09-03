@@ -189,11 +189,9 @@ The calculated result gets sent along the `C bus` back into the `register bank`.
 
 Click the knob to store the result in `R3`. Run a simulation of a full cycle to subtract `R1` from `R2` and store the result in `R3`.
 
-<blockquote>Q6: Describe what happened and the output in the previous step.</blockquote>
+<blockquote>Q6: What settings (e.g., knob positions) would cause the value stored in <code>R3</code> to be doubled?</blockquote>
 
-<blockquote>Q7: What settings (e.g., knob positions) would cause the value stored in <code>R3</code> to be doubled?</blockquote>
-
-<blockquote>Q8: Set <code>R3</code> to 12 and test your answer to Q7? Did your hypothesis hold true? Why or why not?</blockquote>
+<blockquote>Q7: Set <code>R3</code> to 12 and test your answer to Q7? Did your hypothesis hold true? Why or why not?</blockquote>
 
 # CPU & the Fetch-Execute Cycle
 
@@ -275,13 +273,13 @@ Put the value `42` into memory location `0`, and select it as the `RW` location.
 
 Set the connection switch along the `C Bus` into the register bank so that it is closed. Select the `C Bus address` to be `R0`.
 
-<blockquote>Q9: Based on these settings, what do you think will happen when you click <code>Execute</code>?</blockquote>
+<blockquote>Q8: Based on these settings, what do you think will happen when you click <code>Execute</code>?</blockquote>
   
-<blockquote>Q10: Test your prediction using the simulator. Did your hypothesis hold true? Why or why not?</blockquote>
+<blockquote>Q9: Test your prediction using the simulator. Did your hypothesis hold true? Why or why not?</blockquote>
 
-<blockquote>Q11: What settings (bus addresses, ALU operation, switches, and memory RW) would result in R0 minus R3 being stored in memory location 4?</blockquote>
+<blockquote>Q10: What settings (bus addresses, ALU operation, switches, and memory RW) would result in R0 minus R3 being stored in memory location 4?</blockquote>
 
-<blockquote>Q12: Set <code>R0 = 23</code> and <code>R3 = 16</code> to test your Q11 answer. Did your hypothesis hold true? Why or why not?</blockquote>
+<blockquote>Q11: Set <code>R0 = 23</code> and <code>R3 = 16</code> to test your Q11 answer. Did your hypothesis hold true? Why or why not?</blockquote>
 
 # Assembly Language
 
@@ -341,7 +339,7 @@ The core tasks for this program:
 - Add the two register values and store in `R1` (second register)
 - Store the arithmetic operation output in memory location `13`
 
-<blockquote>Q13: How would we represent each of these tasks using this simulator's assembly code? HINT: Think through the underlying program logic and connect to examples in the instruction set.</blockquote>
+<blockquote>Q12: How would we represent each of these tasks using this simulator's assembly code? HINT: Think through the underlying program logic and connect to examples in the instruction set.</blockquote>
 
 <p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Main_Memory.png?raw=true" width="500"></p>
 
@@ -357,7 +355,7 @@ Since our first two instructions involve reading values from memory, we'll need 
 
 We don't need to make any other changes to the simulator (circuits, knobs, etc).
 
-<blockquote>Q14: Based on these settings, what do you think will happen when you run this program? Use the fetch-execute cycle framework to describe what will happen in each iteration of the program.</blockquote>
+<blockquote>Q13: Based on these settings, what do you think will happen when you run this program? Use the fetch-execute cycle framework to describe what will happen in each iteration of the program.</blockquote>
 
 Fetch-execute cycle:
 - Fetch instruction
@@ -365,21 +363,21 @@ Fetch-execute cycle:
 - Get data (if needed)
 - Execute instruction
 
-<blockquote>Q15: When will this program stop or end?</blockquote>
+<blockquote>Q14: When will this program stop or end?</blockquote>
 
-<blockquote>Q16: Test your prediction using the simulator. What parts of your hypothesis held true? What parts did not?</blockquote> 
+<blockquote>Q15: Test your prediction using the simulator. What parts of your hypothesis held true? What parts did not?</blockquote> 
 
 <p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Control_Unit.png?raw=true" width="500"></p>
 
-<blockquote>Q17: What can you tell about how the simulator's control unit is interpreting the assembly language instructions? NOTE: You do not need to map out the exact assembly-machine language translation. Describe in general how assembly language instructions are handled by the control unit.</blockquote>
+<blockquote>Q16: What can you tell about how the simulator's control unit is interpreting the assembly language instructions? NOTE: You do not need to map out the exact assembly-machine language translation. Describe in general how assembly language instructions are handled by the control unit.</blockquote>
 
 Think about how many discrete instructions are part of this program. Since there are only four instructions, the simulator should only need 4 cycles to finish the program.
 
 But you may have noticed the program is still running and the `PC` (program counter) value continues to increase.
 
-<blockquote>Q18: What settings or values would we need to modify for the program to stop after executing the last instruction?</blockquote>
+<blockquote>Q17: What settings or values would we need to modify for the program to stop after executing the last instruction?</blockquote>
 
-<blockquote>Q19: Test your prediction using the simulator. What parts of your hypothesis held true? What parts did not?</blockquote> 
+<blockquote>Q18: Test your prediction using the simulator. What parts of your hypothesis held true? What parts did not?</blockquote> 
 
 # Putting It All Together
 
@@ -397,7 +395,7 @@ Let's find the hardware specs for your personal computer (or a school computer y
 - [Chromebook](https://www.lifewire.com/how-to-check-chromebook-specs-hardware-4782658)
 - [Linux](https://www.makeuseof.com/check-system-details-and-hardware-information-on-linux/)
 
-<blockquote>Q20: How would you describe some of these specifications in your own words, using terms and concepts covered in this lab?</blockquote>
+<blockquote>Q19: How would you describe some of these specifications in your own words, using terms and concepts covered in this lab?</blockquote>
 
 You may be wondering if these specifications matter for your regular computer use. That's a fair question. 
 
@@ -430,23 +428,21 @@ Q4: With the values of <code>R1=42</code> and <code>R2=31</code> that you input 
 
 Q5: Is the result what you expected? Why or why not? What happened to the diagnostic boxes?
 
-Q6: Describe what happened and the output in the previous step.
+Q6: What settings (e.g., knob positions) would cause the value stored in <code>R3</code> to be doubled?
 
-Q7: What settings (e.g., knob positions) would cause the value stored in <code>R3</code> to be doubled?
+Q7: Set <code>R3</code> to 12 and test your answer to Q7? Did your hypothesis hold true? Why or why not?
 
-Q8: Set <code>R3</code> to 12 and test your answer to Q7? Did your hypothesis hold true? Why or why not?
-
-Q9: Based on these settings, what do you think will happen when you click <code>Execute</code>?
+Q8: Based on these settings, what do you think will happen when you click <code>Execute</code>?
   
-Q10: Test your prediction using the simulator. Did your hypothesis hold true? Why or why not?
+Q9: Test your prediction using the simulator. Did your hypothesis hold true? Why or why not?
 
-Q11: What settings (bus addresses, ALU operation, switches, and memory RW) would result in R0 minus R3 being stored in memory location 4?
+Q10: What settings (bus addresses, ALU operation, switches, and memory RW) would result in R0 minus R3 being stored in memory location 4?
 
-Q12: Set <code>R0 = 23</code> and <code>R3 = 16</code> to test your Q11 answer. Did your hypothesis hold true? Why or why not?
+Q11: Set <code>R0 = 23</code> and <code>R3 = 16</code> to test your Q11 answer. Did your hypothesis hold true? Why or why not?
 
-Q13: How would we represent each of these tasks using this simulator's assembly code? HINT: Think through the underlying program logic and connect to examples in the instruction set.
+Q12: How would we represent each of these tasks using this simulator's assembly code? HINT: Think through the underlying program logic and connect to examples in the instruction set.
 
-Q14: Based on these settings, what do you think will happen when you run this program? Use the fetch-execute cycle framework to describe what will happen in each iteration of the program.
+Q13: Based on these settings, what do you think will happen when you run this program? Use the fetch-execute cycle framework to describe what will happen in each iteration of the program.
 
 Fetch-execute cycle:
 - Fetch instruction
@@ -454,17 +450,17 @@ Fetch-execute cycle:
 - Get data (if needed)
 - Execute instruction
 
-Q15: When will this program stop or end?
+Q14: When will this program stop or end?
 
-Q16: Test your prediction using the simulator. What parts of your hypothesis held true? What parts did not?
+Q15: Test your prediction using the simulator. What parts of your hypothesis held true? What parts did not?
 
-Q17: What can you tell about how the simulator's control unit is interpreting the assembly language instructions? NOTE: You do not need to map out the exact assembly-machine language translation. Describe in general how assembly language instructions are handled by the control unit.
+Q16: What can you tell about how the simulator's control unit is interpreting the assembly language instructions? NOTE: You do not need to map out the exact assembly-machine language translation. Describe in general how assembly language instructions are handled by the control unit.
 
-Q18: What settings or values would we need to modify for the program to stop after executing the last instruction?
+Q17: What settings or values would we need to modify for the program to stop after executing the last instruction?
 
-Q19: Test your prediction using the simulator. What parts of your hypothesis held true? What parts did not?
+Q18: Test your prediction using the simulator. What parts of your hypothesis held true? What parts did not?
 
-Q20: Find the hardware specs for your personal computer (or a school computer you can access). How would you describe some of these specifications in your own words, using terms and concepts covered in this lab?
+Q19: Find the hardware specs for your personal computer (or a school computer you can access). How would you describe some of these specifications in your own words, using terms and concepts covered in this lab?
 
 - [Mac users](https://support.apple.com/guide/system-information/get-system-information-syspr35536/mac)
 - [PC users](https://www.lifewire.com/how-to-get-your-computer-specs-3506998)
