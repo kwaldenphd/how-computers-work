@@ -1,4 +1,4 @@
-# Key Terms
+# Key Concepts
 
 **Addressing Mode**
 - Typically 3 bits. It indicates how to interpret the operand specifier.
