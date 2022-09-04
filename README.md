@@ -38,6 +38,7 @@ This lab's lecture segments were adapted from the following PBS *[Crash Course C
 
 # Table of Contents
 - [Lecture & Live Coding](#lecture--live-coding)
+- [Key Concepts](#key-concepts)
 - [Lab Notebook Template](#lab-notebook-template)
 - [Von Neumann Architecture](#von-neumann-architecture)
 - [ALU & Memory](#alu--memory)
@@ -63,9 +64,9 @@ Example:
   </tr>
   </table>
 
-## Key Terms
+## Key Concepts
 
-[Click here](https://github.com/kwaldenphd/how-computers-work/blob/main/key-terms.md) for a full list of key terms and definitions for this lab.
+[Click here](https://github.com/kwaldenphd/how-computers-work/blob/main/key-concepts.md) for a full list of key concepts and definitions for this lab.
 
 ## Lab Notebook Template
 
@@ -106,7 +107,7 @@ The core components of the von Neumann architecture:
   </tr>
   </table>
 
-## Key Terms
+## Key Concepts
 
 <p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/ALU_Diagram.gif?raw=true" width="500"></p>
 
@@ -126,7 +127,7 @@ The core components of the von Neumann architecture:
 **Persistent Memory**
 - Physical storage (magnetic disks, solid state disks, magnetic tape, etc) that retains information even when the device is powered off
 
-[Click here](https://github.com/kwaldenphd/how-computers-work/blob/main/key-terms.md) for a full list of key terms and definitions for this lab.
+[Click here](https://github.com/kwaldenphd/how-computers-work/blob/main/key-concepts.md) for a full list of key concepts and definitions for this lab.
 
 ## Comprehension Check
 
@@ -202,7 +203,7 @@ Click the knob to store the result in `R3`. Run a simulation of a full cycle to 
   </tr>
   </table>
 
-## Key Terms
+## Key Concepts
 
 **Input and Output (I/O)**
 - I/O devices provide inputs to the system and enable the computer to provide output
@@ -232,7 +233,7 @@ Click the knob to store the result in `R3`. Run a simulation of a full cycle to 
   * Get data (if needed)
   * Execute instruction
 
-[Click here](https://github.com/kwaldenphd/how-computers-work/blob/main/key-terms.md) for a full list of key terms and definitions for this lab.
+[Click here](https://github.com/kwaldenphd/how-computers-work/blob/main/key-concepts.md) for a full list of key concepts and definitions for this lab.
 
 ## Comprehension Check
 
@@ -290,7 +291,7 @@ Set the connection switch along the `C Bus` into the register bank so that it is
   </tr>
   </table>
 
-## Key Terms
+## Key Concepts
 
 <p align="center"><img src="https://github.com/kwaldenphd/how-computers-work/blob/main/images/Pep9_Instruction_Format.png?raw=true" width="500"></p>
 
@@ -312,7 +313,7 @@ Set the connection switch along the `C Bus` into the register bank so that it is
 **Addressing Mode**
 - Typically 3 bits. It indicates how to interpret the operand specifier.
 
-[Click here](https://github.com/kwaldenphd/how-computers-work/blob/main/key-terms.md) for a full list of key terms and definitions for this lab.
+[Click here](https://github.com/kwaldenphd/how-computers-work/blob/main/key-concepts.md) for a full list of key concepts and definitions for this lab.
 
 ## Comprehension Check
 
