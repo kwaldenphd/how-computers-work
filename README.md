@@ -199,7 +199,7 @@ Click the knob to store the result in `R3`. Run a simulation of a full cycle to 
 <table>
  <tr><td>
 <img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
-<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=517ac0ae-6466-4508-9264-aef401054b25">CPU & the Fetch-Execute Cycle</a></td>
+<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=023c10d6-1764-48bf-a75d-aef40109b030">CPU & the Fetch-Execute Cycle</a></td>
   </tr>
   </table>
 
