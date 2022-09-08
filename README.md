@@ -103,7 +103,7 @@ The core components of the von Neumann architecture:
 <table>
  <tr><td>
 <img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
-<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=517ac0ae-6466-4508-9264-aef401054b25">ALU & Memory</a></td>
+<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b3c6700d-f527-4cc6-b4aa-aef40109af8e">ALU & Memory</a></td>
   </tr>
   </table>
 
