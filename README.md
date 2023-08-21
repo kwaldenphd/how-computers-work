@@ -71,11 +71,6 @@ Example:
 ## Lab Notebook Template
 
 [Link to lab notebook template](https://docs.google.com/document/d/1SpHmyZkN7b5wmtY0n8y5jI6JxBanZXg8UVZOoNPIv_o/copy) (ND users, Google Doc)
-- Simulator screenshots are HIGHLY recommended.
-  * Windows ([Snipping Tool](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b) for folks running older versions of Windows; [Snip & Sketch](https://www.lifewire.com/snip-and-sketch-windows-10-4774799) for folks running updated versions)
-  * [Mac](https://support.apple.com/en-us/HT201361)
-  * [Google Chromebook](https://support.google.com/chromebook/answer/10474268?hl=en)
-- [Tutorial for adding images/tables/drawings to a Google Doc](https://www.techrepublic.com/article/how-to-add-images-tables-and-drawings-to-a-google-doc-file/)
 
 # Von Neumann Architecture
 
