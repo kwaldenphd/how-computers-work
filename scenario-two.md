@@ -30,10 +30,10 @@ Put the value `42` into memory location `0`, and select it as the `RW` location.
 
 Set the connection switch along the `C Bus` into the register bank so that it is closed. Select the `C Bus address` to be `R0`.
 
-<blockquote>Q8: Based on these settings, what do you think will happen when you click <code>Execute</code>?</blockquote>
+<blockquote>Q1: Based on these settings, what do you think will happen when you click <code>Execute</code>?</blockquote>
   
-<blockquote>Q9: Test your prediction using the simulator. Did your hypothesis hold true? Why or why not?</blockquote>
+<blockquote>Q2: Test your prediction using the simulator. Did your hypothesis hold true? Why or why not?</blockquote>
 
-<blockquote>Q10: What settings (bus addresses, ALU operation, switches, and memory RW) would result in R0 minus R3 being stored in memory location 4?</blockquote>
+<blockquote>Q3: What settings (bus addresses, ALU operation, switches, and memory RW) would result in R0 minus R3 being stored in memory location 4?</blockquote>
 
-<blockquote>Q11: Set <code>R0 = 23</code> and <code>R3 = 16</code> to test your Q11 answer. Did your hypothesis hold true? Why or why not?</blockquote>
+<blockquote>Q4: Set <code>R0 = 23</code> and <code>R3 = 16</code> to test your Q11 answer. Did your hypothesis hold true? Why or why not?</blockquote>
