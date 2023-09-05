@@ -255,7 +255,7 @@ Let's find the hardware specs for your personal computer (or a school computer y
 - [Chromebook](https://www.lifewire.com/how-to-check-chromebook-specs-hardware-4782658)
 - [Linux](https://www.makeuseof.com/check-system-details-and-hardware-information-on-linux/)
 
-<blockquote>Q5: How would you describe some of these specifications in your own words, using terms and concepts covered in this lab?</blockquote>
+<blockquote>Q5: How would you describe some of these specifications in your own words, using terms and concepts covered in this lab? Specific aspects of your computer's system to discuss: persistent memory, short-term memory (RAM), processor, graphics, ports or peripherals</blockquote>
 
 You may be wondering if these specifications matter for your regular computer use. That's a fair question. 
 
